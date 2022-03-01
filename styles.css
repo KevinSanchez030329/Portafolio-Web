@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+body hr{
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  height: 2px;
+  background: rgb(12, 12, 12);
+}
+
+/*header*/
+
+header{
+  position: fixed;
+  width: 100%;
+  transition: all 0.7s;
+}
+
+.nav-bar{
+
+  background: rgb(32, 32, 32);
+  padding: 20px;
+  display: block;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  position:fixed;
+  transition: top 0.5s;
+}
+
+.menu{
+  position: absolute;
+  list-style: none;
+  background: rgb(20, 20, 20);
+  width: 50%;
+  padding-top: 64px;
+  display: block;
+  padding: 0;
+  font-size: 17px;
+  margin: 0;
+  margin-top: 60px;
+  height: 1940px;
+  margin-left: -100% ;
+  transition: all 0.7s;
+
+}
+
+
+.menu li i{
+  float: left;
+  letter-spacing: 5px;
+}
+
+
+.menu__link{
+  display: block;
+  padding: 18px;
+  
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.45s;
+}
+
+.mostrar{
+  margin-left: 0;
+  transition: all 1.0s;
+}
+
+
+.menu__link:hover{
+  color: #2b52d3;
+}
+
+
+@media(min-width:1024px) {
+  .nav-bar{
+    display: none;
+  }
+  .menu {
+    background: rgb(12, 12, 12);
+    margin-left: 0 ;
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    font-size: 15.5px;
+    padding-top: 0px;
+    height: 57px;
+    padding-left: 30px;
+  }
+}
+
+  .menu li{
+    font-size: 15.5px;
+  }
+
+/*/header*/
+
+/*banner*/
+
+#banner {
+  display: flex;
+  width: 100%;
+  padding-top: 57px;
+  height: 520px;
+  background: url(assets/img1.jpg);
+  background-attachment: fixed;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+#banner .content-bant{
+  width: 85%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 50px;
+
+}
+
+#banner .info {
+  color: #ffffff;
+}
+
+#banner .info h1 {
+  font-size: 2.6em;
+}
+
+#banner .content-bant .info-text p, li{
+  font-size: 25px;
+}
+
+#banner .content-bant .info-text{
+  width: 100%;
+}
+
+#banner .contac a{
+
+  color: white;
+  width: 100px;
+  background: #0f2f96;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight:bolder ;
+
+  margin-top: 20px;
+
+  padding: 9px;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  transition: all 0.5s;
+}
+
+#banner .contac a:hover{
+  color: rgb(5, 11, 44);
+  background: white;
+
+}
+
+#banner .info-text{
+  display: flex;
+  width: 360px;
+  height: 35px;
+  font-size: 1.6em;
+  line-height: 35px;
+  color: white;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#banner .info-text ul{
+  list-style: none;
+  padding-left: 10px ;
+  animation: cambiar 7s infinite;
+}
+
+#banner .info-text ul, p{
+  margin: 0;
+}
+
+@keyframes cambiar {
+
+  0%{ margin-top: 0;}
+  20%{ margin-top: 0;}
+
+  25%{ margin-top: -35px;}
+  50%{ margin-top: -35px;}
+
+  55%{ margin-top: -70px;}
+  80%{ margin-top: -70px;}
+
+  85%{ margin-top: -35px;}
+  95%{ margin-top: -35px;}
+
+  100%{ margin-top: 0px;}
+}
+
+
+
+@media screen and (max-width: 640px)  {
+  
+  #banner .content-bant {
+    width: 100%;
+    padding: 25px;
+  }
+
+  #banner .info{
+    font-size: 15.5px;
+  }
+
+  #banner .content-bant .info-text p, li{
+    font-size: 18px;
+  }
+
+  #banner .contac a{
+    display: flex;
+    font-size: 17px;
+  }
+}
+
+/*/banner*/
+
+/*Habilidades*/
+
+.habilid{
+  padding: 30px;
+}
+
+.habilid h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.habilid hr{
+  display: block;
+  width: 120px;
+  margin: 10px auto;
+  height: 3px;
+  background: #082694;
+  border: none;
+}
+
+/*/Habilidades*/
+
+/*Sobre mi*/
+
+.biog{  
+  padding: 30px;
+}
+
+.biog h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.biog hr{
+  display: block;
+  width: 120px;
+  margin: 10px auto;
+  height: 3px;
+  background: #082694;
+  border: none;
+}
+
+.biog h3{
+  text-align: center;
+}
+
+.biog p{
+  margin-top: 15px;
+  text-align: center;
+  display: flex;
+}
+
+.biog .info_biog{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 15px;
+  padding: 30px;
+}
+
+.biog img{  
+  width: 85%;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+}
+
+.biog .info_biog h2{
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.biog .info_biog hr{
+  width: 100%;
+  height: 2px;
+}
+
+.biog .info_biog h3{
+  text-align: left;
+  display: block;
+}
+
+.biog .info_biog p{
+  text-align: left;
+  margin-top: -10px;
+}
+
+
+@media screen and (max-width: 912px) {
+  
+  .biog img {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 5px;
+  }
+
+  .biog .info_biog{
+    display: block;
+    padding: 0px;
+  }
+}
+
+/*/Sobre mi*/
+
+/*Servicios*/
+
+.ofert{
+  padding: 40px;
+}
+
+.ofert h1{
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.ofert hr{
+  display: block;
+  width: 210px;
+  margin: 10px auto;
+  height: 3px;
+  background: #082694;
+  border: none;
+}
+
+.ofert .conteiner-post{
+  display: inline-flex;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.ofert article{
+  padding: 20px;
+}
+
+.ofert article h2{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.ofert article p{
+  padding: 10px;
+  color: #ebebeb;
+}
+
+.ofert .conteiner-post img{
+  width: 75%;
+}
+
+@media screen and (max-width: 640px){
+  .ofert .conteiner-post{
+    display: inline-block;
+  }
+}
+
+/*/Servicios*/
+
+/*foot*/
+
+.foot{
+  width: 100%;
+  
+  background: rgb(30, 30, 30);
+  color: white;
+
+
+  text-align: center;
+}
+
+.foot #foot-content{
+  background: rgb(30, 30, 30);
+  padding: 25px;
+}
+
+.foot #foot-content h1 {
+  font-size: 27px;
+}
+
+.foot #foot-content hr{
+  text-decoration: none;
+  background: #082694;
+  margin: 10px auto;
+  width: 130px;
+  height: 3px
+}
+
+.foot .email_form{
+  width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border:1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: #ffffff;
+
+}
+
+.foot .email_form h4{
+  background: rgb(55, 55, 55);
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.foot .email_form input, textarea{
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+
+  padding: 10px;
+  font-size: 14px;
+}
+
+.foot .email_form textarea{
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 250px;
+  max-height: 350px;
+}
+
+.foot .email_form #button_email{
+  background-color: #4669e6;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 70px;
+  height: 34px;
+  font-size: 13.5px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.foot .email_form #button_email:hover{
+  background-color: #2648c4;
+}
+
+@media (max-width: 480px) {
+  .foot .email_form{
+    width:100%;
+  }
+}
+
+.foot .foot-limit{
+  margin: 0 auto;
+  width: 96%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  border: none;
+}
+  
+.foot .foot-foot{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 20% 80%; 
+}
+
+.foot .foot-social{
+  text-align: left;
+  display: block;
+  margin: auto;
+}
+
+.foot .social_a{
+  text-decoration: none;
+}
+
+.foot #social-link_1, #social-link_2, #social-link_3, #social-link_4{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  margin: 0px;
+  margin-left: 15px;
+}
+
+.foot #social-link_1 i, #social-link_2 i, #social-link_3 i, #social-link_4 i{
+  transition: all 0.4s;
+}
+
+.foot #social-link_1 i:hover{
+  color: #3b5998;
+  transform:scale(1.25, 1.25);
+}
+
+.foot #social-link_2 i:hover{
+  color: #4dc247;
+  transform:scale(1.25, 1.25);
+}
+
+.foot #social-link_3 i:hover{
+  color: #FF4301;
+  transform:scale(1.25, 1.25);
+}
+
+.foot #social-link_4 i:hover{
+  color: rgb(0, 0, 0);
+  transform:scale(1.25, 1.25);
+}
+
+.foot .copy{
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  text-align: right;
+  align-self: center;
+  color: rgb(170, 170, 170);
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+
+.foot .foot-foot{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  
+.foot #social-link_1, #social-link_2, #social-link_3, #social-link_4{
+  margin-left: 0;
+  letter-spacing: 10px;
+}
+
+.foot .copy {
+      text-align: center;
+    }
+  }
+
+/*/foot*/
