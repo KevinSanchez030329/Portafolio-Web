@@ -25,7 +25,6 @@ header{
 }
 
 .nav-bar{
-
   background: rgb(32, 32, 32);
   padding: 20px;
   display: block;
@@ -50,15 +49,12 @@ header{
   height: 1940px;
   margin-left: -100% ;
   transition: all 0.7s;
-
 }
-
 
 .menu li i{
   float: left;
   letter-spacing: 5px;
 }
-
 
 .menu__link{
   display: block;
@@ -75,16 +71,15 @@ header{
   transition: all 1.0s;
 }
 
-
 .menu__link:hover{
   color: #2b52d3;
 }
-
 
 @media(min-width:1024px) {
   .nav-bar{
     display: none;
   }
+  
   .menu {
     background: rgb(12, 12, 12);
     margin-left: 0 ;
@@ -122,7 +117,6 @@ header{
   box-sizing: border-box;
   margin: 0 auto;
   padding: 50px;
-
 }
 
 #banner .info {
@@ -166,7 +160,6 @@ header{
 #banner .contac a:hover{
   color: rgb(5, 11, 44);
   background: white;
-
 }
 
 #banner .info-text{
@@ -374,7 +367,7 @@ header{
 
 .ofert article p{
   padding: 10px;
-  color: #ebebeb;
+  color: #000000;
 }
 
 .ofert .conteiner-post img{
@@ -393,11 +386,8 @@ header{
 
 .foot{
   width: 100%;
-  
   background: rgb(30, 30, 30);
   color: white;
-
-
   text-align: center;
 }
 
@@ -412,10 +402,10 @@ header{
 
 .foot #foot-content hr{
   text-decoration: none;
-  background: #082694;
+  background: #0a2896;
   margin: 10px auto;
   width: 130px;
-  height: 3px
+  height: 2px
 }
 
 .foot .email_form{
@@ -426,7 +416,6 @@ header{
   border:1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   background: #ffffff;
-
 }
 
 .foot .email_form h4{
@@ -482,13 +471,13 @@ header{
 .foot .foot-limit{
   margin: 0 auto;
   width: 96%;
-  height: 2px;
+  height: 1px;
   background: rgba(0, 0, 0, 0.25);
   border: none;
 }
   
 .foot .foot-foot{
-  padding: 20px;
+  padding: 10px;
   display: grid;
   grid-template-columns: 20% 80%; 
 }
