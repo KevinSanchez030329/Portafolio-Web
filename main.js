@@ -19,4 +19,3 @@ btnMenu.addEventListener("click", function(){
 });
 
 /* /Menu */
-
