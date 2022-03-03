@@ -5,6 +5,10 @@
 
 body{
   font-family: 'Raleway', sans-serif;
+  position: relative;
+  z-index: 10;
+  background-color: #1d1d1d;
+  color: #ffff;
 }
 
 body hr{
@@ -19,13 +23,15 @@ body hr{
 /*header*/
 
 header{
-  position: fixed;
+  position: fixed;  
+  z-index: 90;
   width: 100%;
   transition: all 0.7s;
+ 
 }
 
 .nav-bar{
-  background: rgb(32, 32, 32);
+  background: #161616;
   padding: 20px;
   display: block;
   color: white;
@@ -33,23 +39,27 @@ header{
   width: 100%;
   position:fixed;
   transition: top 0.5s;
+ 
 }
 
 .menu{
   position: absolute;
   list-style: none;
-  background: rgb(20, 20, 20);
+  background: #232323;
   width: 50%;
   padding-top: 64px;
   display: block;
   padding: 0;
   font-size: 17px;
   margin: 0;
-  margin-top: 58px;
-  height: 1940px;
+  margin-top: 58.5px;
+  height: 320px;
   margin-left: -100% ;
   transition: all 0.7s;
-
+  z-index: 90;
+  border-bottom-right-radius: 20px;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
 }
 
 .menu li i{
@@ -178,7 +188,7 @@ header{
 #banner .info-text ul{
   list-style: none;
   padding-left: 10px ;
-  animation: cambiar 7s infinite;
+  animation: cambiar 5s infinite;
 }
 
 #banner .info-text ul, p{
@@ -334,7 +344,7 @@ header{
 /*Servicios*/
 
 .ofert{
-  padding: 35px;
+  padding: 30px;
   margin: auto;
   position: relative;
 }
@@ -355,7 +365,7 @@ header{
 
 .ofert .conteiner-post{
     width: 100%;
-    max-width: 440px;
+    max-width: 430px;
     margin: auto;
     margin-top: 20px;
     overflow: hidden;
@@ -376,13 +386,26 @@ header{
   width: 100%;
   height: auto;
   object-fit: cover;
-  padding: 20px;
-  background: #00000010;
-  border-radius: 20px;
-  border: 1px solid #000000;
+  padding: 15px;
+  margin: 10px;
+  max-width: 380px;
+  background: #e5dcff;
+  border-radius: 17px;
+  border: 2px solid #000000;
   font-size: 16px;
   text-align: center;
   box-sizing: content-box;
+  transition: 1s;
+}
+
+.ofert a .next_img:hover {
+  background-color: #4669e6;
+  border-radius: 100%;
+}
+
+.ofert a .back_img:hover {
+  background-color: #4669e6;
+  border-radius: 100%;
 }
 
 .ofert .item-ofert .img_ofert{
@@ -390,33 +413,38 @@ header{
   margin: 5px;
 }
 
-.ofert .item_ofert h2{
-  font-size: 19px;
+.ofert h2{
+  font-size: 20px;
+  color: #182864;
 }
 
-.ofert .item-ofert p{
-  padding: 10px;
+ .ofert p{
+  padding: 15px;
   color: #000000;
 }
 
 .ofert a .next_img{
   position: absolute;
-  right: 20%;
+  right: 25%;
   top: 50%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
   width: 4%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .ofert a .back_img{
   position: absolute;
-  left: 20%;
+  left: 25%;
   top: 50%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
   width: 4%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 804px){
@@ -431,6 +459,11 @@ header{
   .ofert .item-ofert{
     width: 80%;
     margin: 0 auto;
+    padding: 5px;
+  }
+
+  .ofert h2{
+    font-size: 17px;
   }
 
   .ofert a .next_img{
@@ -445,7 +478,6 @@ header{
     left: 3%;
   }
 
-
 }
 
 /*/Servicios*/
@@ -454,13 +486,13 @@ header{
 
 .foot{
   width: 100%;
-  background: rgb(30, 30, 30);
+  background: rgb(17, 17, 17);
   color: white;
   text-align: center;
 }
 
 .foot #foot-content{
-  background: rgb(30, 30, 30);
+  background: rgb(19, 19, 19);
   padding: 25px;
 }
 
@@ -501,10 +533,21 @@ header{
   width: 100%;
   box-sizing: border-box;
   border: none;
-
   padding: 10px;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(0, 0, 0,) ;
   font-size: 14px;
 }
+
+
+.foot .email_form input:focus{
+  outline: none;
+}
+
+.foot .email_form textarea:focus{
+  outline: none;
+}
+
 
 .foot .email_form textarea{
   max-width: 100%;
@@ -561,7 +604,7 @@ header{
 }
 
 .foot #social-link_1, #social-link_2, #social-link_3, #social-link_4{
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
   font-size: 40px;
   margin: 0px;
   margin-left: 15px;

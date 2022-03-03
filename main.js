@@ -20,6 +20,8 @@ btnMenu.addEventListener("click", function(){
 
 /* /Menu */
 
+/* Slider Ofert*/
+
 const slider = document.querySelector("#slider_ofert");
 let sliderSection = document.querySelectorAll(".item-ofert");
 let sliderSectionLast = sliderSection[sliderSection.length -1];
@@ -59,3 +61,5 @@ btnNext.addEventListener('click', function(){
 btnBack.addEventListener('click', function(){
     MoveBack();
 });
+
+/* Slider Ofert*/

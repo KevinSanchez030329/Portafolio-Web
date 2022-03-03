@@ -6,6 +6,7 @@
     <title>Mi portafolio web</title>
     <link href="styles.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -33,7 +34,7 @@
     <div class="content-bant">
     
     <div class="info">
-    <h1> KJS_N algorithm</h1> 
+    <h1 data-aos="fade-right"> KJS_N algorithm</h1> 
     </div>
     
     <div class="info-text">        
@@ -44,9 +45,9 @@
             <li>futuro</li>
         </ul>
     </div>
+    <div class="contac" data-aos="fade-up"><a href="#foot_link">Contactame</a></div>
 
-    <div class="contac"><a href="#foot_link">Contactame</a></div>
-    </div> 
+</div> 
 </section>
 <!--/banner-->
 
@@ -75,6 +76,7 @@
     <div class="biog">
         <h1>Acerca de mi</h1>    
         <hr>
+
         <h3>Mi nombre es Kevin Jael Sanchez Nuñez</h3>
     <p> 
         Soy un programador frontend development independiente Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sed illo excepturi a, deleniti minus totam magni nobis doloremque sunt.
@@ -108,8 +110,8 @@
 <section id="ofert_link">
 
 <div class="ofert">
-    <h1>Servicios</h1>
-    <hr>
+    <h1 data-aos="fade-down">Servicios</h1>
+    <hr data-aos="fade-down">
 
 <div class="conteiner-post">   
     
@@ -119,9 +121,9 @@
     <div class="slider_ofert" id="slider_ofert">
 
 <div class="item-ofert">
-        <img src="assets/img4.png" alt="foto1" class="img_ofert">
+            <img src="assets/img4.png" alt="foto1" class="img_ofert">
             <h2>Desarrollo Web</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugiat.</p>
+            <p>El proceso de desarrollo web implica tomar los elementos gráficos definidos en el proceso de diseño y codificarlos en un tema personalizado de Wordpress.</p>
 </div>
 
 <div class="item-ofert">
@@ -133,18 +135,19 @@
 <div class="item-ofert">   
         <img src="assets/img3.png" alt="foto1" class="img_ofert">
         <h2>Adaptable a diferentes dispositivos</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugiat.</p>
+        <p>Tener un diseño receptivo significa que su sitio web cambia de tamaño de manera fluida para una visualización óptima, independientemente del tamaño de la pantalla o del dispositivo (por ejemplo, iPhone, iPad)</p>
+
 </div>
 
 <div class="item-ofert">
         <img src="assets/img2.png" alt="foto1" class="img_ofert">
-        <h2>Adimintracion y hosteo web</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugiat.</p>
+        <h2>Administracion y hosteo web</h2>
+        <p>Ofrecemos capacitación personalizada de WordPress para garantizar que tenga confianza en la actualización y el mantenimiento de su sitio web de WordPress.</p>
 </div>
 
 </div>
-
 </div>
+
 </div>
 
 </section>
@@ -156,8 +159,8 @@
 <footer class="foot">
 
 <div id="foot-content">
-    <h1>Contactame</h1>
-    <hr>
+    <h1 data-aos="fade-down">Contactame</h1>
+    <hr data-aos="fade-down">
 
     <div class="email_form"> 
         <h4>Enviar mensaje</h4>
@@ -196,6 +199,12 @@
 <!--script-->
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/86c2c37b72.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900
+        });
+    </script>
 <!--/script-->
 
 </body>
