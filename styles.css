@@ -83,7 +83,7 @@ header{
 }
 
 .menu__link:hover{
-  color: #2b52d3;
+  color: #554aec;
 }
 
 @media(min-width:1024px) {
@@ -365,7 +365,7 @@ header{
 
 .ofert .conteiner-post{
     width: 100%;
-    max-width: 430px;
+    max-width: 425px;
     margin: auto;
     margin-top: 20px;
     overflow: hidden;
@@ -387,26 +387,19 @@ header{
   height: auto;
   object-fit: cover;
   padding: 15px;
-  margin: 10px;
+  margin: 7px;
   max-width: 380px;
-  background: #e5dcff;
+  background: #131313;
   border-radius: 17px;
-  border: 2px solid #000000;
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 6px blue, 0 0 7px blue;
   font-size: 16px;
   text-align: center;
   box-sizing: content-box;
   transition: 1s;
 }
 
-.ofert a .next_img:hover {
-  background-color: #4669e6;
-  border-radius: 100%;
-}
 
-.ofert a .back_img:hover {
-  background-color: #4669e6;
-  border-radius: 100%;
-}
 
 .ofert .item-ofert .img_ofert{
   width: 17%;
@@ -415,39 +408,62 @@ header{
 
 .ofert h2{
   font-size: 20px;
-  color: #182864;
+  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+  color: #f1f1f1;
 }
 
  .ofert p{
   padding: 15px;
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 0 0 5px blue, 0 0 10px blue;
 }
 
-.ofert a .next_img{
+.ofert .next_img i {
   position: absolute;
   right: 25%;
-  top: 50%;
+  top: 45%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
-  width: 4%;
+  font-size: 70px;
   cursor: pointer;
   transition: 0.3s;
+  text-shadow:0 0 5px white ;
+  animation: neon 1.5s infinite backwards;
 }
 
-.ofert a .back_img{
+.ofert .back_img i{
   position: absolute;
   left: 25%;
-  top: 50%;
+  top: 45%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
-  width: 4%;
+  font-size: 70px;
   cursor: pointer;
   transition: 0.3s;
+  text-shadow:0 0 5px white ;
+  animation: neon 1.5s infinite backwards;
 }
 
-@media screen and (max-width: 804px){
+.ofert .next_img i:hover {
+  text-shadow: 0 0 10px blue, 0 0 20px blue;
+  border-radius: 100%;
+}
+
+.ofert .back_img i:hover {
+  text-shadow: 0 0 10px blue, 0 0 20px blue;
+  border-radius: 100%;
+}
+
+@keyframes neon {
+  to{
+    color: gray ;
+    text-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1140px){
   .ofert .conteiner-post{
     max-width: 85%;
   }
@@ -466,16 +482,16 @@ header{
     font-size: 17px;
   }
 
-  .ofert a .next_img{
-    width: 7%;
+  .ofert .next_img i{
     left: 89%;
     top: 50%;
+    font-size: 50px;
   }
 
-  .ofert a .back_img{
-    width: 7%;
+  .ofert .back_img i{
     top: 50%;
     left: 3%;
+    font-size: 50px;
   }
 
 }
@@ -489,6 +505,7 @@ header{
   background: rgb(17, 17, 17);
   color: white;
   text-align: center;
+  border-top: 1px solid #000000;
 }
 
 .foot #foot-content{
@@ -498,14 +515,7 @@ header{
 
 .foot #foot-content h1 {
   font-size: 27px;
-}
-
-.foot #foot-content hr{
-  text-decoration: none;
-  background: #0a2896;
-  margin: 10px auto;
-  width: 130px;
-  height: 2px
+  color: #ffffff;
 }
 
 .foot .email_form{
