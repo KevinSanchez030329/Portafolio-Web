@@ -49,6 +49,7 @@ header{
   height: 1940px;
   margin-left: -100% ;
   transition: all 0.7s;
+
 }
 
 .menu li i{
@@ -82,6 +83,7 @@ header{
   
   .menu {
     background: rgb(12, 12, 12);
+ 
     margin-left: 0 ;
     display: flex;
     margin-top: 0;
@@ -332,66 +334,117 @@ header{
 /*Servicios*/
 
 .ofert{
-  padding: 40px;
+  padding: 35px;
+  margin: auto;
+  position: relative;
 }
 
 .ofert h1{
   text-align: center;
   font-size: 30px;
-  padding: 10px;
 }
 
 .ofert hr{
   display: block;
-  width: 210px;
-  margin: 10px auto;
+  width: 90px;
+  margin: 5px auto;
   height: 3px;
   background: #082694;
   border: none;
 }
 
 .ofert .conteiner-post{
-  padding-top: 30px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 50% 50%;
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.ofert .slider_ofert{
+  display: flex;
+  width: 400%;
+  height: 290px;
+  margin-left: -100%;
+ 
+  margin: 0;
+
 }
 
 .ofert .item-ofert{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   padding: 20px;
   background: #00000010;
   border-radius: 20px;
-  width: 400px;
-  margin: 20px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: content-box;
 }
 
-.ofert .item-ofert article img{
-  width: 20%;
+.ofert .item-ofert .img_ofert{
+  width: 17%;
+  margin: 5px;
 }
 
-.ofert article h2{
-  font-size: 20px;
-  padding: 10px;
+.ofert .item_ofert h2{
+  font-size: 19px;
 }
 
-.ofert article p{
+.ofert .item-ofert p{
   padding: 10px;
   color: #000000;
 }
 
-.ofert .conteiner-post img{
-  width: 75%;
+.ofert a .next_img{
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  display: flex;
+  width: 4%;
 }
 
-@media screen and (max-width: 640px){
+.ofert a .back_img{
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  display: flex;
+  width: 4%;
+}
+
+@media screen and (max-width: 804px){
   .ofert .conteiner-post{
-    display: inline-block;
+    max-width: 85%;
+  }
+
+  .ofert .slider_ofert{
+    height: 295px;
   }
 
   .ofert .item-ofert{
     width: 80%;
-    margin: 20px auto;
+    margin: 0 auto;
   }
+
+  .ofert a .next_img{
+    width: 7%;
+    left: 89%;
+    top: 50%;
+  }
+
+  .ofert a .back_img{
+    width: 7%;
+    top: 50%;
+    left: 3%;
+  }
+
 
 }
 

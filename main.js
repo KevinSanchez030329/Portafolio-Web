@@ -19,3 +19,43 @@ btnMenu.addEventListener("click", function(){
 });
 
 /* /Menu */
+
+const slider = document.querySelector("#slider_ofert");
+let sliderSection = document.querySelectorAll(".item-ofert");
+let sliderSectionLast = sliderSection[sliderSection.length -1];
+
+const btnNext = document.querySelector("#next");
+const btnBack = document.querySelector("#back");
+
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+function MoveNext() {
+    let sliderSectionFirst = document.querySelectorAll(".item-ofert")[0];
+    slider.style.marginLeft = "-200%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+        slider.style.marginLeft = "-100%";
+    }, 500);
+}
+
+function MoveBack() {
+    let sliderSection = document.querySelectorAll(".item-ofert");
+    let sliderSectionLast = sliderSection[sliderSection.length -1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginLeft = "-100%";
+    }, 500);
+}
+
+btnNext.addEventListener('click', function(){
+    MoveNext();
+});
+
+btnBack.addEventListener('click', function(){
+    MoveBack();
+});
