@@ -21,6 +21,7 @@
             <li class="menu__item"><a href="#biog_link" class="menu__link">Acerca de</a></li>
             <li class="menu__item"><a href="#habilid_link" class="menu__link">Habilidades</a> </li>
             <li class="menu__item"><a href="#ofert_link" class="menu__link">Servicios</a></li>
+            <li class="menu__item"><a href="#contact_link" class="menu__link">Contacto</a></li>
         </ul>
     </div>
     </nav>
@@ -72,8 +73,9 @@
 
 <!--sobre mi-->
 <section id="biog_link">
-
     <div class="biog">
+        <div class="biog_content">
+
         <h1>Acerca de mi</h1>    
         <hr>
 
@@ -103,15 +105,18 @@
 </div>    
         </div>
     </div>
+    </div>
 </section>
 <!--/sobre mi-->
 
 <!--Servicio-->
 <section id="ofert_link">
-
 <div class="ofert">
-    <h1 data-aos="fade-down">Servicios</h1>
-    <hr data-aos="fade-down">
+
+    <div class="ofert_content">
+
+    <h1 data-aos="zoom-in">Servicios</h1>
+    <hr data-aos="zoom-in">
 
 <div class="conteiner-post">   
     
@@ -121,65 +126,76 @@
     <div class="slider_ofert" id="slider_ofert">
 
 <div class="item-ofert">
-            <img src="assets/img4.png" alt="foto1" class="img_ofert">
-            <h2>Desarrollo Web</h2>
-            <p>El proceso de desarrollo web implica tomar los elementos gráficos definidos en el proceso de diseño y codificarlos en un tema personalizado de Wordpress.</p>
+        <i class="fas fa-code"></i>
+        <h2>Desarrollo Web</h2>
+        <p>El proceso de desarrollo web implica tomar los elementos gráficos definidos en el proceso de diseño y codificarlos en un tema personalizado de Wordpress.</p>
 </div>
 
 <div class="item-ofert">
-        <img src="assets/img1.png" alt="foto1" class="img_ofert">
+        <i class="fas fa-palette"></i>
         <h2>Diseño de pagina web </h2>
         <p>Nuestro enfoque para el diseño de sitios web es crear un sitio web que fortalezca la marca de su empresa al tiempo que garantiza la facilidad de uso y la simplicidad para su audiencia</p>
 </div>
 
 <div class="item-ofert">   
-        <img src="assets/img3.png" alt="foto1" class="img_ofert">
+    <i class="fas fa-laptop"></i>
         <h2>Adaptable a diferentes dispositivos</h2>
         <p>Tener un diseño receptivo significa que su sitio web cambia de tamaño de manera fluida para una visualización óptima, independientemente del tamaño de la pantalla o del dispositivo (por ejemplo, iPhone, iPad)</p>
 
 </div>
 
 <div class="item-ofert">
-        <img src="assets/img2.png" alt="foto1" class="img_ofert">
+        <i class="fas fa-network-wired"></i>
         <h2>Administracion y hosteo web</h2>
         <p>Ofrecemos capacitación personalizada de WordPress para garantizar que tenga confianza en la actualización y el mantenimiento de su sitio web de WordPress.</p>
 </div>
 
+    </div>
+    </div>
+    </div>
 </div>
-</div>
-
-</div>
-
 </section>
 <!--/Servicio-->
+
+<!--Contacto-->
+
+<section id="contact_link">
+<div class="contact">
+
+    <div class="contact_content">
+        
+        <h1 data-aos="fade-right">Contactame</h1>
+    
+        <div class="email_form"> 
+            <h4>Enviar mensaje</h4>
+            
+            <form action="email.php" method="post">
+                <input type="text" name="asunto" placeholder="Asunto" required>
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="text" name="email" placeholder="Correo" required>
+                <textarea name="mensaje" required></textarea>
+                <input type="submit" value="Enviar" id="button_email">
+            </form>
+        </div>
+    
+    </div>
+
+</div>
+</section>
+
+<!--/Contacto-->
 
 <!--foot-->
 
 <section id="foot_link">
 <footer class="foot">
 
-<div id="foot-content">
-    <h1 data-aos="fade-right">Contactame</h1>
-
-    <div class="email_form"> 
-        <h4>Enviar mensaje</h4>
-        <form action="email.php" method="post">
-            <input type="text" name="asunto" placeholder="Asunto" required>
-            <input type="text" name="name" placeholder="Nombre" required>
-            <input type="text" name="email" placeholder="Correo" required>
-            <textarea name="mensaje" required></textarea>
-            <input type="submit" value="Enviar" id="button_email">
-        </form>
-    </div>
-
-</div>
-
 <hr class="foot-limit">
 
-<div class="foot-foot">
+<div class="foot-content">
 
     <div class="foot-social">
-        <a href="gracias.html" id="social-link_4" class="social_a"><i class="fab fa-github-square"></i></a>
+        <a href="https://github.com/KevinSanchez030329/Portafolio-Web" id="social-link_4" class="social_a"><i class="fab fa-github-square"></i></a>
         <a href="https://www.reddit.com/user/Kevin_Sanchez030329" id="social-link_3" class="social_a"><i class="fab fa-reddit-square"></i></a>
         <a href="#" id="social-link_2" class="social_a"><i class="fab fa-whatsapp-square"></i></a>
         <a href="#" id="social-link_1" class="social_a"><i class="fab fa-facebook-square"></i></a>
