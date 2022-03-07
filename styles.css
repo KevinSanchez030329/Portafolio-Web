@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body{
   font-family: 'Raleway', sans-serif;
@@ -54,7 +56,7 @@ header{
   font-size: 17px;
   margin: 0;
   margin-top: 58.5px;
-  height: 320px;
+  height: 380px;
   margin-left: -100% ;
   transition: all 0.7s;
   z-index: 90;
@@ -66,10 +68,15 @@ header{
   letter-spacing: 5px;
 }
 
-.menu__link{
+.menu__logo{
   display: block;
   padding: 18px;
-  
+  text-align: center;
+}
+
+  .menu__link{
+  display: block;
+  padding: 18px;
   color: white;
   text-decoration: none;
 
@@ -82,7 +89,7 @@ header{
 }
 
 .menu__link:hover{
-  color: #554aec;
+  color: #7573ee;
 }
 
 @media(min-width:1024px) {
@@ -121,6 +128,7 @@ header{
   background-attachment: fixed;
   background-position: 0px 0px;
   background-size: cover;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
 }
 
 #banner .content-bant{
@@ -135,7 +143,10 @@ header{
 }
 
 #banner .info h1 {
-  font-size: 2.6em;
+  font-size: 3.0em;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-flex;
 }
 
 #banner .content-bant .info-text p, li{
@@ -150,7 +161,7 @@ header{
 
   color: white;
   width: 100px;
-  background: #0f2f96;
+  border: 2px solid #0400fc;
   display: inline-block;
   font-size: 17px;
   text-decoration: none;
@@ -158,19 +169,15 @@ header{
 
   margin-top: 20px;
 
-  padding: 9px;
+  padding: 8px;
 
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 5px;
 
   transition: all 0.5s;
 }
 
 #banner .contac a:hover{
-  color: rgb(5, 11, 44);
-  background: white;
+  background: #0400fc ;
 }
 
 #banner .info-text{
@@ -236,69 +243,48 @@ header{
 
 /*/banner*/
 
-/*Habilidades*/
-
-.habilid{
-  padding: 30px;
-}
-
-.habilid h1{
-  text-align: center;
-  font-size: 30px;
-}
-
-.habilid hr{
-  display: block;
-  width: 120px;
-  margin: 10px auto;
-  height: 3px;
-  background: #082694;
-  border: none;
-}
-
-/*/Habilidades*/
-
 /*Sobre mi*/
 
 .biog{  
-  padding: 25px;
+  padding: 20px;
 }
 
 .biog .biog_content{
-  padding: 20px;
+  padding: 30px;
   background: rgba(10, 10, 10, 0.10);
   border-radius: 10px;
+
 }
 
 .biog h1{
   text-align: center;
   font-size: 30px;
-}
-
-.biog hr{
-  display: block;
-  width: 120px;
-  margin: 10px auto;
-  height: 3px;
-  background: #082694;
-  border: none;
+  display: inline-flex;
+  border-left: 2px solid #0400fc; 
+  padding-left: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .biog h3{
-  text-align: center;
+  text-align: left;
+  font-weight: 300;
+  color: #7573ee;
 }
 
 .biog p{
   margin-top: 15px;
-  text-align: center;
+  text-align: left;
   display: flex;
+  color: #cfcfcf;
+
 }
 
 .biog .info_biog{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   margin-top: 15px;
   padding: 30px;
+  border-right: 2px solid #0400fc;
 }
 
 .biog img{  
@@ -306,46 +292,112 @@ header{
   margin: auto;
   border-radius: 5px;
   display: flex;
+  box-shadow: -45px 25px 0px #14136d85 ;
 }
 
 .biog .info_biog h2{
   text-align: left;
-  margin-bottom: 5px;
-}
-
-.biog .info_biog hr{
-  width: 100%;
-  height: 2px;
+  padding: 10px;
+  border-left: 2px solid #0400fc;
 }
 
 .biog .info_biog h3{
   text-align: left;
   display: block;
+  margin: 0;
+  padding: 10px;
 }
 
 .biog .info_biog p{
   text-align: left;
-  margin-top: -10px;
+  padding: 0px ;
+  margin: 0;
+  padding: 10px;
 }
 
+.biog .info_biog .habilid_info .habilid_01{
+  background: #2648c4;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  border-radius: 5px;
+  text-align: right;
+  width: 90%;
+  margin: 10px;
+}
+
+.biog .info_biog .habilid_info .habilid_02{
+  background: #2648c4;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  border-radius: 5px;
+  text-align: right;
+  width: 70%;
+  margin: 10px;
+}
+
+.biog .info_biog .habilid_info .habilid_03{
+  background: #2648c4;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  border-radius: 5px;
+  text-align: right;
+  width: 40%;
+  margin: 10px;
+}
+
+.biog .info_biog .habilid_info .habilid_04{
+  background: #2648c4;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  border-radius: 5px;
+  text-align: right;
+  width: 60%;
+  margin: 10px;
+}
 
 @media screen and (max-width: 912px) {
   .biog{
     padding: 10px;
   }
 
+  .biog .biog_content{
+    padding: 15px;
+  }
+
+  .biog h1{
+    font-size: 20px;
+    padding-left: 15px;
+  }
 
   .biog img {
     display: block;
     width: 100%;
     margin: 30px auto;
     border-radius: 5px;
+    box-shadow: none;
   }
 
   .biog .info_biog{
     display: block;
     padding: 0px;
+    border-right: none;
   }
+}
+
+.biog .info_biog .habilid_info .habilid_01{
+  grid-template-columns: 80% 20%;
+}
+
+.biog .info_biog .habilid_info .habilid_02{
+  grid-template-columns: 75% 25%;
+}
+
+.biog .info_biog .habilid_info .habilid_03{
+  grid-template-columns: 60% 40%;
+}
+
+.biog .info_biog .habilid_info .habilid_04{
+  grid-template-columns: 70% 30%;
 }
 
 /*/Sobre mi*/
@@ -356,12 +408,6 @@ header{
   padding: 25px;
   margin: auto;
   position: relative;
-}
-
-.ofert .ofert_content{
-  padding: 25px;
-  background: rgba(10, 10, 10, 0.10);
-  border-radius: 10px;
 }
 
 .ofert h1{
@@ -381,13 +427,20 @@ header{
   box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
   border: none;
   border-radius: 20px;
+
+}
+
+.ofert p{
+  text-align: center;
+  display: inline-flex;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 .ofert .conteiner-post{
     width: 100%;
     max-width: 425px;
     margin: auto;
-    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -396,7 +449,6 @@ header{
   width: 400%;
   height: 290px;
   margin-left: -100%;
- 
   margin: 0;
 
 }
@@ -432,7 +484,7 @@ header{
   font-family: 'Text Me One', sans-serif;
 }
 
- .ofert p{
+ .ofert .item-ofert p{
   padding: 17px;
   color: #ffffff;
   font-size: 18px;
@@ -443,36 +495,36 @@ header{
 .ofert .next_img i {
   position: absolute;
   right: 25%;
-  top: 45%;
+  top: 55%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
   font-size: 70px;
   cursor: pointer;
   transition: 0.3s;
-  text-shadow:0 0 4px white ;
+  text-shadow:0 0 4px white, 0 0 8px white;
 
 }
 
 .ofert .back_img i{
   position: absolute;
   left: 25%;
-  top: 45%;
+  top: 55%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
   font-size: 70px;
   cursor: pointer;
   transition: 0.3s;
-  text-shadow:0 0 4px white;
+  text-shadow:0 0 4px white, 0 0 8px white;
 }
 
 .ofert .next_img i:hover {
-  text-shadow: 0 0 10px blue, 0 0 20px blue;
+  text-shadow: 0 0 10px blue, 0 0 16px blue;
 }
 
 .ofert .back_img i:hover {
-  text-shadow: 0 0 10px blue, 0 0 20px blue;
+  text-shadow: 0 0 10px blue, 0 0 16px blue;
 }
 
 .ofert .next_img i:active{
@@ -494,9 +546,9 @@ header{
   55%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
   65%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
 
-  80%{ box-shadow: none;
+  81%{ box-shadow: none;
     border: 2px solid rgba(255, 255, 255, 0.5); }
-  85%{ box-shadow: none;
+  83%{ box-shadow: none;
     border: 2px solid rgba(255, 255, 255, 0.75); }
 
   90%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
@@ -537,15 +589,15 @@ header{
   }
 
   .ofert .next_img i{
-    left: 89%;
-    top: 50%;
-    font-size: 50px;
+    left: 92%;
+    top: 65%;
+    font-size: 40px;
   }
 
   .ofert .back_img i{
-    top: 50%;
-    left: 3%;
-    font-size: 50px;
+    top: 65%;
+    left: 2%;
+    font-size: 40px;
   }
 
 }
@@ -558,7 +610,7 @@ header{
 .contact{
   text-align: center;
   background-color: #1d1d1d;
-  padding: 25px;
+  padding: 10px;
 }
 
 .contact_content{
@@ -656,7 +708,6 @@ header{
   background: rgb(17, 17, 17);
   color: white;
   text-align: center;
-  border-top: 1px solid #000000;
 }
 
 .foot .foot-limit{
