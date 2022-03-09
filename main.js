@@ -39,19 +39,19 @@ function MoveNext() {
         slider.style.transition = "none";
         slider.insertAdjacentElement('beforeend', sliderSectionFirst);
         slider.style.marginLeft = "-100%";
-    }, 500);
+    }, 450);
 }
 
 function MoveBack() {
     let sliderSection = document.querySelectorAll(".item-ofert");
     let sliderSectionLast = sliderSection[sliderSection.length -1];
-    slider.style.marginLeft = "0";
+    slider.style.marginLeft = "-100%";
     slider.style.transition = "all 0.5s";
     setTimeout(function(){
         slider.style.transition = "none";
         slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+        slider.style.marginLeft = "-200%";
+    }, 300);
 }
 
 btnNext.addEventListener('click', function(){

@@ -89,7 +89,7 @@ header{
 }
 
 .menu__link:hover{
-  color: #7573ee;
+  color: #418ACA;
 }
 
 @media(min-width:1024px) {
@@ -123,7 +123,7 @@ header{
   display: flex;
   width: 100%;
   padding-top: 57px;
-  height: 520px;
+  height: 560px;
   background: url(assets/img1.jpg);
   background-attachment: fixed;
   background-position: 0px 0px;
@@ -161,7 +161,7 @@ header{
 
   color: white;
   width: 100px;
-  border: 2px solid #0400fc;
+  border: 2px solid #022873;
   display: inline-block;
   font-size: 17px;
   text-decoration: none;
@@ -177,7 +177,8 @@ header{
 }
 
 #banner .contac a:hover{
-  background: #0400fc ;
+  background:#325185;
+  border: 2px solid #325185;
 }
 
 #banner .info-text{
@@ -258,17 +259,18 @@ header{
 
 .biog h1{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   display: inline-flex;
-  border-left: 2px solid #0400fc; 
+  border-left: 2px solid #03318C; 
   padding-left: 25px;
+  padding: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .biog h3{
   text-align: left;
   font-weight: 300;
-  color: #7573ee;
+  color: #418ACA;
 }
 
 .biog p{
@@ -284,7 +286,7 @@ header{
   grid-template-columns: 40% 60%;
   margin-top: 15px;
   padding: 30px;
-  border-right: 2px solid #0400fc;
+  border-right: 2px solid #03318C;
 }
 
 .biog img{  
@@ -292,13 +294,7 @@ header{
   margin: auto;
   border-radius: 5px;
   display: flex;
-  box-shadow: -45px 25px 0px #14136d85 ;
-}
-
-.biog .info_biog h2{
-  text-align: left;
-  padding: 10px;
-  border-left: 2px solid #0400fc;
+  box-shadow: -45px 25px 0px #010626 ;
 }
 
 .biog .info_biog h3{
@@ -316,7 +312,7 @@ header{
 }
 
 .biog .info_biog .habilid_info .habilid_01{
-  background: #2648c4;
+  background: #03318C;
   display: grid;
   grid-template-columns: 90% 10%;
   border-radius: 5px;
@@ -326,7 +322,7 @@ header{
 }
 
 .biog .info_biog .habilid_info .habilid_02{
-  background: #2648c4;
+  background: #03318C;
   display: grid;
   grid-template-columns: 85% 15%;
   border-radius: 5px;
@@ -336,7 +332,7 @@ header{
 }
 
 .biog .info_biog .habilid_info .habilid_03{
-  background: #2648c4;
+  background: #03318C;
   display: grid;
   grid-template-columns: 80% 20%;
   border-radius: 5px;
@@ -346,7 +342,7 @@ header{
 }
 
 .biog .info_biog .habilid_info .habilid_04{
-  background: #2648c4;
+  background: #03318C;
   display: grid;
   grid-template-columns: 80% 20%;
   border-radius: 5px;
@@ -405,9 +401,17 @@ header{
 /*Servicios*/
 
 .ofert{
-  padding: 25px;
+  padding: 20px;
   margin: auto;
   position: relative;
+}
+
+.ofert .ofert_content{
+  padding: 30px;
+}
+
+.ofert .ofert_content .ofert_title{
+  display: inline-flex;
 }
 
 .ofert h1{
@@ -415,41 +419,52 @@ header{
   font-size: 30px;
   font-family: 'Pacifico', cursive;
   font-weight: 100;
-  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+  padding: 10px;
+  align-self: center;
+  text-shadow: 0 0 5px #03318C, 0 0 10px #03318C, 0 0 15px #03318C;
 }
 
 .ofert hr{
   display: block;
-  width: 90px;
+  width: 3px;
+  text-align: left;
   margin: 5px auto;
-  height: 3px;
+  height: 45px;
   background: #ffffff;
-  box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+  box-shadow: 0 0 5px #03318C, 0 0 10px #03318C, 0 0 15px #03318C;
   border: none;
   border-radius: 20px;
 
 }
 
 .ofert p{
-  text-align: center;
+  text-align: left;
   display: inline-flex;
-  margin-bottom: 50px;
-  padding: 10px;
+  text-shadow: 0 0 5px #03318C, 0 0 15px #03318C;
+}
+
+.ofert .ofert_content .ofert_post{
+  width: 100%;
+  margin: auto;
+  margin-top: 5px ;
+  padding: 0;
+  position: relative;
+  display: flex;
+  overflow: hidden;
 }
 
 .ofert .conteiner-post{
-    width: 100%;
-    max-width: 425px;
+    width: 90%;
+    max-width: 415px;
     margin: auto;
-    overflow: hidden;
+    margin-top: 40px;
 }
 
 .ofert .slider_ofert{
   display: flex;
   width: 400%;
-  height: 290px;
+  height: 305px;
   margin-left: -100%;
-  margin: 0;
 
 }
 
@@ -459,12 +474,12 @@ header{
   height: auto;
   object-fit: cover;
   padding: 15px;
-  margin: 7px;
   max-width: 380px;
   background: #131313;
   border-radius: 17px;
   border: 2px solid #ffffff;
   font-size: 16px;
+  margin: 10px;
   text-align: center;
   box-sizing: content-box;
   transition: 1s;
@@ -493,9 +508,8 @@ header{
 }
 
 .ofert .next_img i {
-  position: absolute;
-  right: 25%;
-  top: 55%;
+  position: relative;
+  top: 50%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
@@ -503,13 +517,11 @@ header{
   cursor: pointer;
   transition: 0.3s;
   text-shadow:0 0 4px white, 0 0 8px white;
-
 }
 
 .ofert .back_img i{
-  position: absolute;
-  left: 25%;
-  top: 55%;
+  position: relative;
+  top: 50%;
   display: inline-block;
   margin: 0 auto;
   display: flex;
@@ -554,15 +566,22 @@ header{
   90%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
   100%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
 
+  }
+
+@media screen and (min-width: 1062px) and (max-width: 1342px){
+  .ofert .ofert_content .ofert_post{
+    width: 50%;
+  } 
 }
 
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1343px){
   .ofert{
     padding: 10px;
   }
 
   .ofert .conteiner-post{
     max-width: 85%;
+    overflow: hidden;
   }
 
   .ofert .slider_ofert{
@@ -580,24 +599,25 @@ header{
   }
 
   .ofert h2{
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .ofert p{
-    padding: 10px;
     font-size: 15px;
   }
 
   .ofert .next_img i{
-    left: 92%;
-    top: 65%;
+    top: 50%;
     font-size: 40px;
   }
 
   .ofert .back_img i{
-    top: 65%;
-    left: 2%;
+    top: 50%;
     font-size: 40px;
+  }
+
+  .ofert .item-ofert p{
+    font-size: 14px;
   }
 
 }
@@ -610,7 +630,7 @@ header{
 .contact{
   text-align: center;
   background-color: #1d1d1d;
-  padding: 10px;
+  padding: 20px;
 }
 
 .contact_content{
@@ -620,8 +640,12 @@ header{
 }
 
 .contact .contact_content h1 {
-  font-size: 27px;
+  font-size: 25px;
   color: #ffffff;
+  border-left: 2px solid #03318C;
+  display: flex;
+  padding:10px ;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact .email_form{
@@ -663,7 +687,6 @@ header{
 .contact .email_form textarea:focus{
   outline: none;
 }
-
 
 .contact .email_form textarea{
   max-width: 100%;
