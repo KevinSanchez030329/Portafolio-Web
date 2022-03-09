@@ -1,3 +1,39 @@
+/* Carussel Ofert */
+
+window.addEventListener('load', function(){
+    new Glider(document.querySelector('.post_list'), {
+         
+        slidesToShow: 1,
+        duration: 1.4,
+        dots: '.ofert_indicador',
+        arrows: {
+          prev: '.back',
+          next: '.next',
+        }, 
+        responsive: [
+            {
+              // screens greater than >= 800px
+              breakpoint: 660,
+              settings: {
+                // Set to `auto` and provide item width to adjust to viewport
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },{
+              // screens greater than >= 1024px
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            }
+          ]
+
+    });
+});
+
+/* /Carussel Ofert */
+
 /* Menu */
 
 let scroll_negative = window.pageYOffset; 
@@ -19,47 +55,3 @@ btnMenu.addEventListener("click", function(){
 });
 
 /* /Menu */
-
-/* Slider Ofert*/
-
-const slider = document.querySelector("#slider_ofert");
-let sliderSection = document.querySelectorAll(".item-ofert");
-let sliderSectionLast = sliderSection[sliderSection.length -1];
-
-const btnNext = document.querySelector("#next");
-const btnBack = document.querySelector("#back");
-
-slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-
-function MoveNext() {
-    let sliderSectionFirst = document.querySelectorAll(".item-ofert")[0];
-    slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
-        slider.style.marginLeft = "-100%";
-    }, 450);
-}
-
-function MoveBack() {
-    let sliderSection = document.querySelectorAll(".item-ofert");
-    let sliderSectionLast = sliderSection[sliderSection.length -1];
-    slider.style.marginLeft = "-100%";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-        slider.style.marginLeft = "-200%";
-    }, 300);
-}
-
-btnNext.addEventListener('click', function(){
-    MoveNext();
-});
-
-btnBack.addEventListener('click', function(){
-    MoveBack();
-});
-
-/* Slider Ofert*/

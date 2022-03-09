@@ -403,14 +403,10 @@ header{
 .ofert{
   padding: 20px;
   margin: auto;
-  position: relative;
 }
 
-.ofert .ofert_content{
-  padding: 30px;
-}
 
-.ofert .ofert_content .ofert_title{
+.ofert .ofert_title{
   display: inline-flex;
 }
 
@@ -437,48 +433,63 @@ header{
 
 }
 
-.ofert p{
-  text-align: left;
-  display: inline-flex;
-  text-shadow: 0 0 5px #03318C, 0 0 15px #03318C;
+.ofert .ofert_content{
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
 }
 
-.ofert .ofert_content .ofert_post{
-  width: 100%;
-  margin: auto;
-  margin-top: 5px ;
-  padding: 0;
-  position: relative;
-  display: flex;
+.ofert .post_list{
   overflow: hidden;
 }
 
-.ofert .conteiner-post{
-    width: 90%;
-    max-width: 415px;
-    margin: auto;
-    margin-top: 40px;
+.ofert .back, .next{
+  position: absolute;
+  display: block;
+  font-size: 60px;
+  border: none;
+  background: none;
+  color: #ffff;
+  text-shadow:0 0 2px white, 0 0 6px white;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  transition: all 0.1s;
 }
 
-.ofert .slider_ofert{
-  display: flex;
-  width: 400%;
-  height: 305px;
-  margin-left: -100%;
+.ofert .back{
+  left: -50px;
+}
 
+.ofert .next{
+  right: -50px;
+}
+
+.ofert .next:hover{
+  text-shadow: 0 0 10px #03318C, 0 0 16px #03318C;
+}
+
+.ofert .back:hover {
+  text-shadow: 0 0 10px #03318C, 0 0 16px #03318C;
+}
+
+.ofert .next:active{
+  text-shadow: none;
+  color: gray;
+}
+
+.ofert .back:active{
+  text-shadow: none;
+  color: gray;
 }
 
 .ofert .item-ofert{
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
   padding: 15px;
-  max-width: 380px;
   background: #131313;
   border-radius: 17px;
   border: 2px solid #ffffff;
-  font-size: 16px;
   margin: 10px;
   text-align: center;
   box-sizing: content-box;
@@ -489,12 +500,12 @@ header{
 .ofert .item-ofert i{
   font-size: 35px;
   margin: 20px;
-  text-shadow: 0 0 5px blue, 0 0 10px blue;
+  text-shadow: 0 0 5px #03318C, 0 0 10px #03318C, 0 0 20px #03318C;
 }
 
-.ofert h2{
+.ofert .item-ofert h2{
   font-size: 23px;
-  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+  text-shadow: 0 0 5px #03318C, 0 0 10px #03318C, 0 0 20px #03318C;
   color: #f1f1f1;
   font-family: 'Text Me One', sans-serif;
 }
@@ -503,124 +514,28 @@ header{
   padding: 17px;
   color: #ffffff;
   font-size: 18px;
-  text-shadow: 0 0 5px blue, 0 0 15px blue;
+  text-shadow: 0 0 5px #03318C, 0 0 10px #03318C;
   font-family: 'Text Me One', sans-serif;
 }
 
-.ofert .next_img i {
-  position: relative;
-  top: 50%;
-  display: inline-block;
-  margin: 0 auto;
-  display: flex;
-  font-size: 70px;
-  cursor: pointer;
-  transition: 0.3s;
-  text-shadow:0 0 4px white, 0 0 8px white;
-}
-
-.ofert .back_img i{
-  position: relative;
-  top: 50%;
-  display: inline-block;
-  margin: 0 auto;
-  display: flex;
-  font-size: 70px;
-  cursor: pointer;
-  transition: 0.3s;
-  text-shadow:0 0 4px white, 0 0 8px white;
-}
-
-.ofert .next_img i:hover {
-  text-shadow: 0 0 10px blue, 0 0 16px blue;
-}
-
-.ofert .back_img i:hover {
-  text-shadow: 0 0 10px blue, 0 0 16px blue;
-}
-
-.ofert .next_img i:active{
-  text-shadow: none;
-  color: gray;
-}
-
-.ofert .back_img i:active{
-  text-shadow: none;
-  color: gray;
-}
-
 @keyframes neon_1{
-  0%{ box-shadow: inset 0 0 8px blue, 0 0 10px blue; 
+  0%{ box-shadow: inset 0 0 8px #03318C, 0 0 10px #03318C; 
       border: 2px solid rgb(255, 255, 255);}
-  50%{ box-shadow: inset 0 0 8px blue, 0 0 10px blue;
+  50%{ box-shadow: inset 0 0 8px #03318C, 0 0 10px #03318C;
       border: 2px solid rgb(255, 255, 255); }
 
-  55%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
-  65%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
+  55%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
+  65%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
 
   81%{ box-shadow: none;
     border: 2px solid rgba(255, 255, 255, 0.5); }
   83%{ box-shadow: none;
     border: 2px solid rgba(255, 255, 255, 0.75); }
 
-  90%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
-  100%{ box-shadow: inset 0 0 6px blue, 0 0 7px blue; }
+  90%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
+  100%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
 
   }
-
-@media screen and (min-width: 1062px) and (max-width: 1342px){
-  .ofert .ofert_content .ofert_post{
-    width: 50%;
-  } 
-}
-
-@media screen and (max-width: 1343px){
-  .ofert{
-    padding: 10px;
-  }
-
-  .ofert .conteiner-post{
-    max-width: 85%;
-    overflow: hidden;
-  }
-
-  .ofert .slider_ofert{
-    height: 295px;
-  }
-
-  .ofert .item-ofert{
-    width: 80%;
-    margin: 7px auto;
-    padding: 5px;
-  }
-
-  .ofert .item-ofert i{
-    font-size: 30px;
-  }
-
-  .ofert h2{
-    font-size: 16px;
-  }
-
-  .ofert p{
-    font-size: 15px;
-  }
-
-  .ofert .next_img i{
-    top: 50%;
-    font-size: 40px;
-  }
-
-  .ofert .back_img i{
-    top: 50%;
-    font-size: 40px;
-  }
-
-  .ofert .item-ofert p{
-    font-size: 14px;
-  }
-
-}
 
 /*/Servicios*/
 
