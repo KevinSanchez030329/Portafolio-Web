@@ -219,8 +219,6 @@ header{
   100%{ margin-top: 0px;}
 }
 
-
-
 @media screen and (max-width: 640px)  {
   
   #banner .content-bant {
@@ -311,45 +309,75 @@ header{
   padding: 10px;
 }
 
+/* habilidades*/
+ 
+.habilid_info .habilid_static{
+  width: 100%;
+  position: relative;
+  border: 3px solid #03318C;
+  border-radius: 20px;
+  padding: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.biog .habilid_info .habilid_static p{
+  color: rgb(255, 255, 255);
+  padding: 0;
+  text-align: right;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.biog .habilid_info .habilid_static .habilid_posent{
+  position: absolute;
+  left: 90%;
+}
+
 .biog .info_biog .habilid_info .habilid_01{
   background: #03318C;
-  display: grid;
-  grid-template-columns: 90% 10%;
-  border-radius: 5px;
-  text-align: right;
+  text-align: left;
+  border-radius: 14px;
   width: 90%;
-  margin: 10px;
+  display: flex;
+  padding: 7px;
 }
 
 .biog .info_biog .habilid_info .habilid_02{
-  background: #03318C;
-  display: grid;
-  grid-template-columns: 85% 15%;
-  border-radius: 5px;
-  text-align: right;
+  background:#03318C;
+  border-radius: 14px;
+  text-align: left;
   width: 70%;
-  margin: 10px;
+  display: flex;
+  padding: 7px;
 }
 
 .biog .info_biog .habilid_info .habilid_03{
   background: #03318C;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  border-radius: 5px;
-  text-align: right;
+  border-radius: 14px;
+  text-align: left;
   width: 40%;
-  margin: 10px;
+  display: flex;
+  padding: 7px;
 }
 
 .biog .info_biog .habilid_info .habilid_04{
   background: #03318C;
-  display: grid;
-  grid-template-columns: 80% 20%;
-  border-radius: 5px;
-  text-align: right;
+  border-radius: 14px;
+  text-align: left;
   width: 60%;
-  margin: 10px;
+  display: flex;
+  padding: 7px;
 }
+
+@media screen and (max-width: 440px) {
+  .biog .habilid_info .habilid_static .habilid_posent{
+    left: 80%;
+  }
+}
+
+/* /habilidades*/
 
 @media screen and (max-width: 912px) {
   .biog{
@@ -380,22 +408,6 @@ header{
   }
 }
 
-.biog .info_biog .habilid_info .habilid_01{
-  grid-template-columns: 80% 20%;
-}
-
-.biog .info_biog .habilid_info .habilid_02{
-  grid-template-columns: 75% 25%;
-}
-
-.biog .info_biog .habilid_info .habilid_03{
-  grid-template-columns: 60% 40%;
-}
-
-.biog .info_biog .habilid_info .habilid_04{
-  grid-template-columns: 70% 30%;
-}
-
 /*/Sobre mi*/
 
 /*Servicios*/
@@ -404,7 +416,6 @@ header{
   padding: 20px;
   margin: auto;
 }
-
 
 .ofert .ofert_title{
   display: inline-flex;
@@ -504,7 +515,7 @@ header{
 }
 
 .ofert .item-ofert h2{
-  font-size: 23px;
+  font-size: 22px;
   text-shadow: 0 0 5px #03318C, 0 0 10px #03318C, 0 0 20px #03318C;
   color: #f1f1f1;
   font-family: 'Text Me One', sans-serif;
@@ -537,13 +548,31 @@ header{
 
   }
 
-/*/Servicios*/
+  @media screen and (max-width: 430px){
+    .ofert .item-ofert{
+      padding: 5px;
+    }
 
+    .ofert .item-ofert i{
+      font-size: 23px;
+    }
+
+    .ofert .item-ofert h2{
+      font-size: 18px;
+    }
+
+    .ofert .item-ofert p{
+      font-size: 15px;
+    }
+
+  }
+
+/*/Servicios*/
 
 /*Contacto*/
 
 .contact{
-  text-align: center;
+  text-align: left;
   background-color: #1d1d1d;
   padding: 20px;
 }
@@ -563,18 +592,29 @@ header{
   font-family: 'Montserrat', sans-serif;
 }
 
+.contact .contact_content h3{
+  text-align: left;
+  font-weight: 300;
+  color: #418ACA;
+}
+
+.contact .post_contact{
+  display: grid;
+  grid-template-columns: 50% 50% ;
+}
+
 .contact .email_form{
-  width: 400px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border:1px solid rgba(0, 0, 0, 0.5);
+  width: 70%;
+  max-width: 390px;
+  margin: 35px auto;
+  box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.7);
   border-radius: 10px;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.28);
+
 }
 
 .contact .email_form h4{
-  background: rgb(55, 55, 55);
+  background: rgb(40, 40, 40);
   text-align: left;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -590,10 +630,9 @@ header{
   border: none;
   padding: 10px;
   transition: 0.5s;
-  border-bottom: 1px solid rgba(0, 0, 0,) ;
   font-size: 14px;
+  background: rgba(255, 255, 255, 0.93);
 }
-
 
 .contact .email_form input:focus{
   outline: none;
@@ -611,8 +650,9 @@ header{
 }
 
 .contact .email_form #button_email{
-  background-color: #4669e6;
-  color: #ffffff;
+  background-color: #418ACA;
+  color: #1d1d1d;
+  font-weight: bold;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -627,14 +667,108 @@ header{
   background-color: #2648c4;
 }
 
-@media (max-width: 480px) {
+.contact .post_inicial{
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.315);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact .post_inicial h2{
+  font-size: 20px;
+  color: #418ACA;
+  margin-bottom: 10px ;
+}
+
+.contact .post_inicial p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfcfcf;
+}
+
+.contact .slider_content{
+  width: 90%;
+  max-width: 300px;
+
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact .slider_contact{
+  display: flex;
+  width: 400%;
+
+  margin-left: -100%;
+}
+
+.contact .back_slider{
+  position: absolute;
+  font-size: 30px;
+  top: 40%;
+  transform: translate(-50%);
+  
+  left: 15px;
+}
+
+.contact .next_slider{
+  position: absolute; 
+  border-radius: 100%;
+  font-size: 30px;
+  top: 40%;
+  transform: translate(-50%);
+
+  right: 0px;
+}
+
+.contact .post_slider{
+  padding: 35px;
+  background: rgba(0, 0, 0, 0.315);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 35%;
+  text-align: center;
+}
+
+.contact .post_slider i{
+  font-size: 40px;
+  margin: 10px;
+}
+
+.contact .post_slider h2{
+  font-size: 20px;
+  color: #418ACA;
+}
+
+.contact .post_slider p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfcfcf;
+}
+
+@media (max-width: 750px) {
   .contact{
     padding: 10px;
   }
   
+  .contact .post_contact{
+  display: block;
+  }
+
   .contact .email_form{
     width:100%;
   }
+
+  .contact .post_1{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px ;
+  }
+
+  .contact .post_2{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px ;
+  }
+
 }
 
 /*/Contacto*/
