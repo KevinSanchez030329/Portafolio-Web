@@ -123,7 +123,7 @@ header{
   display: flex;
   width: 100%;
   padding-top: 57px;
-  height: 560px;
+  height: 520px;
   background: url(assets/img1.jpg);
   background-attachment: fixed;
   background-position: 0px 0px;
@@ -668,7 +668,7 @@ header{
 }
 
 .contact .post_inicial{
-  padding: 20px;
+  border: 2px solid #03318C;
   background: rgba(0, 0, 0, 0.315);
   border-radius: 5px;
   margin-bottom: 20px;
@@ -676,13 +676,15 @@ header{
 
 .contact .post_inicial h2{
   font-size: 20px;
-  color: #418ACA;
-  margin-bottom: 10px ;
+  color: #ececec;
+  padding: 10px;
+  background: #03318C;
 }
 
 .contact .post_inicial p{
   font-family: Arial, Helvetica, sans-serif;
   color: #cfcfcf;
+  padding: 15px;
 }
 
 .contact .slider_content{
