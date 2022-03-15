@@ -92,6 +92,14 @@ header{
   color: #418ACA;
 }
 
+@media(min-width:530px){
+
+.menu{
+  width: 35%;
+}
+
+}
+
 @media(min-width:1024px) {
   .nav-bar{
     display: none;
@@ -379,7 +387,7 @@ header{
 
 /* /habilidades*/
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 750px) {
   .biog{
     padding: 10px;
   }
@@ -395,7 +403,7 @@ header{
 
   .biog img {
     display: block;
-    width: 100%;
+    width: 65%;
     margin: 30px auto;
     border-radius: 5px;
     box-shadow: none;
@@ -607,6 +615,7 @@ header{
   width: 70%;
   max-width: 390px;
   margin: 35px auto;
+  margin-top: 0;
   box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.7);
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.28);
@@ -698,7 +707,7 @@ header{
 
 .contact .slider_contact{
   display: flex;
-  width: 400%;
+  width: 300%;
 
   margin-left: -100%;
 }
@@ -709,7 +718,7 @@ header{
   top: 40%;
   transform: translate(-50%);
   
-  left: 15px;
+  left: 20px;
 }
 
 .contact .next_slider{
@@ -718,32 +727,47 @@ header{
   font-size: 30px;
   top: 40%;
   transform: translate(-50%);
+  transition: all 0.2s;
+  right: 5px;
+}
 
-  right: 0px;
+.contact .back_slider:hover{
+  color: #418ACA;
+}
+
+.contact .next_slider:hover{
+  color: #418ACA;
 }
 
 .contact .post_slider{
-  padding: 35px;
+  margin: 5px;
   background: rgba(0, 0, 0, 0.315);
   border-radius: 5px;
+  border: 2px solid #03318C;
   margin-bottom: 20px;
   width: 35%;
   text-align: center;
+
 }
 
 .contact .post_slider i{
   font-size: 40px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .contact .post_slider h2{
   font-size: 20px;
-  color: #418ACA;
+  background: #03318C;
+  color: #ececec;
+  padding: 10px;
 }
 
 .contact .post_slider p{
   font-family: Arial, Helvetica, sans-serif;
   color: #cfcfcf;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 15px;
 }
 
 @media (max-width: 750px) {

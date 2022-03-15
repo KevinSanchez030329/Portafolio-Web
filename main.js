@@ -100,6 +100,6 @@ sliderBack.addEventListener('click', function(){
 
 setInterval(function(){
   move_next();
-}, 8000);
+}, 10000);
 
 /* slider */
