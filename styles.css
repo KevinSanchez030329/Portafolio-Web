@@ -270,7 +270,7 @@ header{
 
 .biog h1{
   text-align: center;
-  font-size: 25px;
+  font-size: 24px;
   display: inline-flex;
   border-left: 2px solid #03318C; 
   padding-left: 25px;
@@ -288,8 +288,7 @@ header{
   margin-top: 15px;
   text-align: left;
   display: flex;
-  color: #cfcfcf;
-
+  color: #e2e2e2;
 }
 
 .biog .info_biog{
@@ -597,7 +596,7 @@ header{
 }
 
 .contact .contact_content h1 {
-  font-size: 25px;
+  font-size: 24px;
   color: #ffffff;
   border-left: 2px solid #03318C;
   display: flex;
@@ -665,8 +664,7 @@ header{
 
 .contact .email_form #button_email{
   background-color: #418ACA;
-  color: #1d1d1d;
-  font-weight: bold;
+  color: rgb(221, 221, 221);
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -679,20 +677,22 @@ header{
 
 .contact .email_form #button_email:hover{
   background-color: #2648c4;
+
 }
 
 .contact .post_inicial{
-  border: 2px solid #03318C;
+  border: 2px solid #01205f;
   background: rgba(0, 0, 0, 0.315);
   border-radius: 5px;
   margin-bottom: 20px;
+  box-shadow: 8px 8px 12px rgb(0, 0, 0, 0.7);
 }
 
 .contact .post_inicial h2{
   font-size: 20px;
   color: #ececec;
   padding: 10px;
-  background: #03318C;
+  background: #01205f;
 }
 
 .contact .post_inicial p{
@@ -704,7 +704,6 @@ header{
 .contact .slider_content{
   width: 90%;
   max-width: 300px;
-
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -748,7 +747,7 @@ header{
   margin: 5px;
   background: rgba(0, 0, 0, 0.315);
   border-radius: 5px;
-  border: 2px solid #03318C;
+  border: 2px solid #01205f;
   margin-bottom: 20px;
   width: 35%;
   text-align: center;
@@ -762,7 +761,7 @@ header{
 
 .contact .post_slider h2{
   font-size: 20px;
-  background: #03318C;
+  background: #01205f;
   color: #ececec;
   padding: 10px;
 }
