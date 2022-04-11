@@ -42,7 +42,6 @@ header{
   width: 100%;
   position:fixed;
   transition: top 0.5s;
- 
 }
 
 .menu{
@@ -70,11 +69,13 @@ header{
 
 .menu__logo{
   display: block;
-  padding: 18px;
+  padding: 10px;
   text-align: center;
+  border: solid 2px #ffff;
+  margin: 8px;
 }
 
-  .menu__link{
+.menu__link{
   display: block;
   padding: 18px;
   color: white;
@@ -131,7 +132,7 @@ header{
   display: flex;
   width: 100%;
   padding-top: 57px;
-  height: 520px;
+  height: 550px;
   background: url(assets/img1.jpg);
   background-attachment: fixed;
   background-position: 0px 0px;
@@ -175,7 +176,7 @@ header{
   text-decoration: none;
   font-weight:bolder ;
 
-  margin-top: 20px;
+  margin-top: 25px;
 
   padding: 8px;
 
