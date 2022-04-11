@@ -230,6 +230,10 @@ header{
 
 @media screen and (max-width: 640px)  {
   
+  #banner{
+    height: 595px;
+  }
+
   #banner .content-bant {
     width: 100%;
     padding: 25px;
