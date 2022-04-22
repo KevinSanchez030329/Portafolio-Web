@@ -348,39 +348,39 @@ header{
 }
 
 .biog .info_biog .habilid_info .habilid_01{
-  background: #03318C;
+  background: #2e66ff77;
   text-align: left;
   border-radius: 14px;
   width: 90%;
   display: flex;
-  padding: 7px;
+  padding: 9px;
 }
 
 .biog .info_biog .habilid_info .habilid_02{
-  background:#03318C;
+  background: #2e66ff77;
   border-radius: 14px;
   text-align: left;
   width: 70%;
   display: flex;
-  padding: 7px;
+  padding: 9px;
 }
 
 .biog .info_biog .habilid_info .habilid_03{
-  background: #03318C;
+  background: #2e66ff77;
   border-radius: 14px;
   text-align: left;
   width: 40%;
   display: flex;
-  padding: 7px;
+  padding: 9px;
 }
 
 .biog .info_biog .habilid_info .habilid_04{
-  background: #03318C;
+  background: #2e66ff77;
   border-radius: 14px;
   text-align: left;
   width: 60%;
   display: flex;
-  padding: 7px;
+  padding: 9px;
 }
 
 @media screen and (max-width: 440px) {
@@ -435,8 +435,8 @@ header{
 
 .ofert h1{
   text-align: center;
-  font-size: 30px;
-  font-family: 'Pacifico', cursive;
+  font-size: 31x;
+  font-family: 'Pacifico', 'Montserrat', cursive;
   font-weight: 100;
   padding: 10px;
   align-self: center;
@@ -561,6 +561,8 @@ header{
   }
 
   @media screen and (max-width: 430px){
+
+    
     .ofert .item-ofert{
       padding: 5px;
     }
@@ -622,12 +624,12 @@ header{
   margin-top: 0;
   box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.7);
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.28);
+  background: #ececec; 
 
 }
 
 .contact .email_form h4{
-  background: rgb(40, 40, 40);
+  background: rgb(34, 34, 34);
   text-align: left;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -644,7 +646,7 @@ header{
   padding: 10px;
   transition: 0.5s;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.93);
+  background: #ececec; 
 }
 
 .contact .email_form input:focus{
@@ -655,15 +657,28 @@ header{
   outline: none;
 }
 
+.contact .email_form hr{
+  display: flex;
+  background: #838383;
+  width: 96%;
+  margin: 0 auto;
+}
+
 .contact .email_form textarea{
   max-width: 100%;
   min-width: 100%;
   min-height: 250px;
-  max-height: 350px;
+  max-height: 250px;
 }
 
-.contact .email_form #button_email{
-  background-color: #418ACA;
+.contact .email_form .submit_email{
+  background: rgb(34, 34, 34);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact .email_form .submit_email #button_email{
+  background-color: #2648c4;
   color: rgb(221, 221, 221);
   cursor: pointer;
   border: none;
@@ -676,7 +691,7 @@ header{
 }
 
 .contact .email_form #button_email:hover{
-  background-color: #2648c4;
+  background-color: #122f99;
 
 }
 
@@ -721,7 +736,6 @@ header{
   font-size: 30px;
   top: 40%;
   transform: translate(-50%);
-  
   left: 20px;
 }
 
@@ -746,16 +760,14 @@ header{
 .contact .post_slider{
   margin: 5px;
   background: rgba(0, 0, 0, 0.315);
-  border-radius: 5px;
-  border: 2px solid #01205f;
+  border-radius: 15px;
   margin-bottom: 20px;
   width: 35%;
   text-align: center;
-
 }
 
 .contact .post_slider i{
-  font-size: 40px;
+  font-size: 35px;
   margin: 15px;
 }
 
@@ -772,6 +784,7 @@ header{
   margin-left: 25px;
   margin-right: 25px;
   padding: 15px;
+  padding-top: 0;
 }
 
 @media (max-width: 750px) {
