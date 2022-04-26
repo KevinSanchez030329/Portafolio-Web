@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body{
   font-family: 'Raleway', sans-serif;
@@ -129,10 +128,11 @@ header{
 /*banner*/
 
 #banner {
-  display: flex;
+  position: relative;
   width: 100%;
+  box-sizing:content-box;
   padding-top: 57px;
-  height: 550px;
+  height: 540px;
   background: url(assets/img1.jpg);
   background-attachment: fixed;
   background-position: 0px 0px;
@@ -140,11 +140,14 @@ header{
   box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
 }
 
+#banner .grid-banner{
+  display: grid;
+  grid-template-columns: 62% 38%;
+  height: 100%;
+}
+
 #banner .content-bant{
-  width: 85%;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 50px;
+  padding: 70px;
 }
 
 #banner .info {
@@ -164,30 +167,6 @@ header{
 
 #banner .content-bant .info-text{
   width: 100%;
-}
-
-#banner .contac a{
-
-  color: white;
-  width: 100px;
-  border: 2px solid #022873;
-  display: inline-block;
-  font-size: 17px;
-  text-decoration: none;
-  font-weight:bolder ;
-
-  margin-top: 25px;
-
-  padding: 8px;
-
-  border-radius: 5px;
-
-  transition: all 0.5s;
-}
-
-#banner .contac a:hover{
-  background:#325185;
-  border: 2px solid #325185;
 }
 
 #banner .info-text{
@@ -210,6 +189,37 @@ header{
 #banner .info-text ul, p{
   margin: 0;
 }
+
+#banner .info-text li{
+  color: #70a0ff;
+}
+
+#banner .info-banner{
+  background: #00000075;
+}
+
+.contac{
+  position: relative;
+  display: inline-flex;
+  left: 48% ;
+  bottom: 36px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.contac i{
+  font-size: 25px;
+  color: #ebebeb;
+  background: #5667ffcb ;
+  padding: 16px;
+  border-radius: 100%;
+
+}
+
+.contac:hover{
+  transform:rotate(360deg);
+}
+
 
 @keyframes cambiar {
 
@@ -234,9 +244,13 @@ header{
     height: 595px;
   }
 
+  #banner .grid-banner{
+    grid-template-rows: 65% 35%;
+    grid-template-columns: none;
+  }
+
   #banner .content-bant {
-    width: 100%;
-    padding: 25px;
+    padding: 20px;
   }
 
   #banner .info{
@@ -246,9 +260,12 @@ header{
   #banner .content-bant .info-text p, li{
     font-size: 18px;
   }
+  
+  .contac{
+    left: 45%;
+  }
 
-  #banner .contac a{
-    display: flex;
+  .contac i{
     font-size: 17px;
   }
 }
@@ -271,6 +288,7 @@ header{
 .biog h1{
   text-align: center;
   font-size: 24px;
+  font-weight: 500;
   display: inline-flex;
   border-left: 2px solid #03318C; 
   padding-left: 25px;
@@ -281,6 +299,7 @@ header{
 .biog h3{
   text-align: left;
   font-weight: 300;
+  font-size: 22px;
   color: #418ACA;
 }
 
@@ -288,7 +307,9 @@ header{
   margin-top: 15px;
   text-align: left;
   display: flex;
-  color: #e2e2e2;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
 }
 
 .biog .info_biog{
@@ -303,8 +324,9 @@ header{
   width: 85%;
   margin: auto;
   border-radius: 5px;
+  border: 3px solid #2e66ff3f;
   display: flex;
-  box-shadow: -45px 25px 0px #010626 ;
+  box-shadow: -45px 25px 0px #2e66ff3f;
 }
 
 .biog .info_biog h3{
@@ -335,11 +357,12 @@ header{
 }
 
 .biog .habilid_info .habilid_static p{
-  color: rgb(255, 255, 255);
   padding: 0;
   text-align: right;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
 }
 
 .biog .habilid_info .habilid_static .habilid_posent{
