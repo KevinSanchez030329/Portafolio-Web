@@ -51,7 +51,6 @@ header{
   padding-top: 64px;
   display: block;
   padding: 0;
-  font-size: 17px;
   margin: 0;
   margin-top: 58.5px;
   height: 380px;
@@ -79,7 +78,7 @@ header{
   padding: 18px;
   color: white;
   text-decoration: none;
-
+  font-size: 17px;
   transition: all 0.45s;
 }
 
@@ -100,7 +99,7 @@ header{
 
 }
 
-@media(min-width:1024px) {
+@media(min-width:624px) {
   .nav-bar{
     display: none;
   }
@@ -141,24 +140,23 @@ header{
 }
 
 #banner .grid-banner{
-  display: grid;
-  grid-template-columns: 62% 38%;
+  display: block;
   height: 100%;
 }
 
 #banner .content-bant{
-  padding: 70px;
-}
-
-#banner .info {
-  color: #ffffff;
+  padding: 60px;
 }
 
 #banner .info h1 {
   font-size: 3.0em;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  display: inline-flex;
+}
+
+#banner .title_line{
+  animation: lit 1s infinite;
+  transition: none;
 }
 
 #banner .content-bant .info-text p, li{
@@ -194,33 +192,6 @@ header{
   color: #70a0ff;
 }
 
-#banner .info-banner{
-  background: #00000075;
-}
-
-.contac{
-  position: relative;
-  display: inline-flex;
-  left: 48% ;
-  bottom: 36px;
-  text-decoration: none;
-  transition: all 0.5s;
-}
-
-.contac i{
-  font-size: 25px;
-  color: #ebebeb;
-  background: #5667ffcb ;
-  padding: 16px;
-  border-radius: 100%;
-
-}
-
-.contac:hover{
-  transform:rotate(360deg);
-}
-
-
 @keyframes cambiar {
 
   0%{ margin-top: 0;}
@@ -238,27 +209,29 @@ header{
   100%{ margin-top: 0px;}
 }
 
+@keyframes lit { 
+  0%{ opacity: 100%;}
+  55%{ opacity: 100%;}
+
+  60%{ opacity: 0%;}
+  100%{ opacity: 0%;}
+}
+
 @media screen and (max-width: 640px)  {
-  
-  #banner{
-    height: 595px;
+
+ 
+
+  #banner .content-bant{
+    padding: 25px;
   }
 
-  #banner .grid-banner{
-    grid-template-rows: 65% 35%;
-    grid-template-columns: none;
-  }
-
-  #banner .content-bant {
-    padding: 20px;
-  }
-
-  #banner .info{
-    font-size: 15.5px;
-  }
+  #banner .info h1{
+    display: block;
+    font-size: 2.5em;
+  } 
 
   #banner .content-bant .info-text p, li{
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .contac{
@@ -268,6 +241,14 @@ header{
   .contac i{
     font-size: 17px;
   }
+}
+
+@media screen and (max-width: 750px)  {
+  
+  #banner .grid-banner{
+    display: block;
+  }
+
 }
 
 /*/banner*/
@@ -287,8 +268,8 @@ header{
 
 .biog h1{
   text-align: center;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 23.5px;
+  
   display: inline-flex;
   border-left: 2px solid #03318C; 
   padding-left: 25px;
@@ -299,7 +280,6 @@ header{
 .biog h3{
   text-align: left;
   font-weight: 300;
-  font-size: 22px;
   color: #418ACA;
 }
 
@@ -392,7 +372,7 @@ header{
   background: #2e66ff77;
   border-radius: 14px;
   text-align: left;
-  width: 40%;
+  width: 50%;
   display: flex;
   padding: 9px;
 }
@@ -401,7 +381,7 @@ header{
   background: #2e66ff77;
   border-radius: 14px;
   text-align: left;
-  width: 60%;
+  width: 40%;
   display: flex;
   padding: 9px;
 }
@@ -424,7 +404,7 @@ header{
   }
 
   .biog h1{
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 15px;
   }
 
@@ -479,6 +459,11 @@ header{
 
 }
 
+.ofert h3{
+  color: #418ACA;
+  font-weight: 300;
+}
+
 .ofert .ofert_content{
   position: relative;
   width: 75%;
@@ -497,7 +482,7 @@ header{
   border: none;
   background: none;
   color: #ffff;
-  text-shadow:0 0 2px white, 0 0 6px white;
+  text-shadow: 0 0 10px #03318C, 0 0 16px #03318C;
   top: calc(50% - 35px);
   cursor: pointer;
   line-height: 30px;
@@ -514,11 +499,11 @@ header{
 }
 
 .ofert .next:hover{
-  text-shadow: 0 0 10px #03318C, 0 0 16px #03318C;
+  text-shadow: 0 0 10px #1648ac, 0 0 16px #1648ac;
 }
 
 .ofert .back:hover {
-  text-shadow: 0 0 10px #03318C, 0 0 16px #03318C;
+  text-shadow: 0 0 10px #1648ac, 0 0 16px #1648ac;
 }
 
 .ofert .next:active{
@@ -565,21 +550,21 @@ header{
 }
 
 @keyframes neon_1{
-  0%{ box-shadow: inset 0 0 8px #03318C, 0 0 10px #03318C; 
+  0%{ box-shadow: inset 0 0 8px #1b57d1, 0 0 10px #1b57d1; 
       border: 2px solid rgb(255, 255, 255);}
-  50%{ box-shadow: inset 0 0 8px #03318C, 0 0 10px #03318C;
+  50%{ box-shadow: inset 0 0 8px #1b57d1, 0 0 10px #1b57d1;
       border: 2px solid rgb(255, 255, 255); }
 
-  55%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
-  65%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
+  55%{ box-shadow: inset 0 0 6px #0955ec, 0 0 7px #0955ec}  
+  65%{ box-shadow: inset 0 0 6px #0955ec, 0 0 7px #0955ec; }
 
   81%{ box-shadow: none;
     border: 2px solid rgba(255, 255, 255, 0.5); }
   83%{ box-shadow: none;
     border: 2px solid rgba(255, 255, 255, 0.75); }
 
-  90%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
-  100%{ box-shadow: inset 0 0 6px #03318C, 0 0 7px #03318C; }
+  90%{ box-shadow: inset 0 0 6px #1b57d1, 0 0 7px #1b57d1; }
+  100%{ box-shadow: inset 0 0 6px #1b57d1, 0 0 7px #1b57d1; }
 
   }
 
@@ -621,11 +606,11 @@ header{
 }
 
 .contact .contact_content h1 {
-  font-size: 24px;
+  font-size: 23.5px;
   color: #ffffff;
   border-left: 2px solid #03318C;
   display: flex;
-  padding:10px ;
+  padding: 10px ;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -643,6 +628,7 @@ header{
 .contact .email_form{
   width: 70%;
   max-width: 390px;
+  max-height: 457px;
   margin: 35px auto;
   margin-top: 0;
   box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.7);
@@ -701,89 +687,111 @@ header{
 }
 
 .contact .email_form .submit_email #button_email{
-  background-color: #2648c4;
+  background-color: #355ae0;
   color: rgb(221, 221, 221);
   cursor: pointer;
   border: none;
   border-radius: 5px;
   width: 70px;
   height: 34px;
-  font-size: 13.5px;
+  font-size: 14px;
   margin: 10px;
   transition: 0.5s;
 }
 
 .contact .email_form #button_email:hover{
-  background-color: #122f99;
+  background-color: #2142b9;
 
 }
 
 .contact .post_inicial{
-  border: 2px solid #01205f;
-  background: rgba(0, 0, 0, 0.315);
-  border-radius: 5px;
+  background: #0000002d;
   margin-bottom: 20px;
   box-shadow: 8px 8px 12px rgb(0, 0, 0, 0.7);
 }
 
 .contact .post_inicial h2{
-  font-size: 20px;
-  color: #ececec;
+  font-size: 19px;
+  color: #ffffff;
   padding: 10px;
-  background: #01205f;
+  background: #418ACA;
 }
 
 .contact .post_inicial p{
   font-family: Arial, Helvetica, sans-serif;
-  color: #cfcfcf;
-  padding: 15px;
+  font-size: 17.5px;
+  color: #ffffff;
+  padding: 12px;
 }
 
 .contact .slider_content{
   width: 90%;
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
   overflow: hidden;
   position: relative;
+
 }
 
 .contact .slider_contact{
   display: flex;
-  width: 300%;
-
+  width: 400%;
   margin-left: -100%;
 }
 
 .contact .back_slider{
   position: absolute;
-  font-size: 30px;
   top: 40%;
   transform: translate(-50%);
-  left: 20px;
+  transition: all 0.2s;
+  left: 8%;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.contact .back_slider i{
+  font-size: 23px;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 9px;
 }
 
 .contact .next_slider{
   position: absolute; 
-  border-radius: 100%;
-  font-size: 30px;
   top: 40%;
   transform: translate(-50%);
   transition: all 0.2s;
-  right: 5px;
+  right: 0px;
+  border-radius: 100%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.contact .next_slider i{
+  font-size: 23px;
+  padding: 1px;
+  padding-left: 9px;
+  padding-right: 6px;
+
 }
 
 .contact .back_slider:hover{
-  color: #418ACA;
+  background: rgba(255, 255, 255, 0.1);
+  border:2px solid #6a79ff;
 }
 
 .contact .next_slider:hover{
-  color: #418ACA;
+  background: rgba(255, 255, 255, 0.1);
+  border:2px solid #6a79ff;
 }
 
 .contact .post_slider{
+
   margin: 5px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0.315);
-  border-radius: 15px;
+  border-radius: 10px;
   margin-bottom: 20px;
   width: 35%;
   text-align: center;
@@ -795,19 +803,29 @@ header{
 }
 
 .contact .post_slider h2{
-  font-size: 20px;
-  background: #01205f;
-  color: #ececec;
+  font-size: 22px;
+  color: #418ACA;
   padding: 10px;
 }
 
 .contact .post_slider p{
   font-family: Arial, Helvetica, sans-serif;
   color: #cfcfcf;
-  margin-left: 25px;
-  margin-right: 25px;
   padding: 15px;
   padding-top: 0;
+  font-size: 18px;
+  margin-left: 45px;
+  margin-right: 45px;
+
+}
+
+.contact .post_slider a i{
+  color: #022d83;
+  font-size: 35px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 @media (max-width: 750px) {
@@ -815,6 +833,10 @@ header{
     padding: 10px;
   }
   
+  .contact .post_inicial p{
+    font-size: 17px;
+  }
+
   .contact .post_contact{
   display: block;
   }
@@ -823,16 +845,26 @@ header{
     width:100%;
   }
 
-  .contact .post_1{
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px ;
+  .contact .back_slider{
+    left: 10%;
   }
 
-  .contact .post_2{
-    width: 70%;
-    margin: auto;
-    margin-bottom: 20px ;
+  .contact .post_slider{
+    padding: 5px;
+  }
+
+  .contact .post_slider i{
+    font-size: 30px;
+    margin: 0;
+    margin: 10px;
+  }
+
+  .contact .post_slider h2{
+    font-size: 16px;
+  }
+
+  .contact .post_slider p{
+    font-size: 14px;
   }
 
 }
@@ -873,7 +905,7 @@ header{
 }
 
 .foot #social-link_1, #social-link_2, #social-link_3, #social-link_4{
-  color: rgba(0, 0, 0);
+  color: rgba(50, 50, 50, 0.9) ;
   font-size: 40px;
   margin: 0px;
   margin-left: 15px;
