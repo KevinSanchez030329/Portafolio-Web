@@ -82,6 +82,23 @@ header{
   transition: all 0.45s;
 }
 
+.menu__buttom{
+  align-self: center;
+  position: absolute;
+  left: 12%;
+  padding-top: 12px;
+}
+
+.menu__buttom i{
+  color: #ffffff;
+  font-size: 32px;
+  transition: all 0.2s;
+}
+
+.menu__buttom i:hover{
+  color: #c0c0c0;
+}
+
 .mostrar{
   margin-left: 0;
   transition: all 1.0s;
@@ -99,7 +116,13 @@ header{
 
 }
 
-@media(min-width:624px) {
+@media(min-width:830px){
+  .menu__buttom{
+    left: 85%;
+  }
+}
+
+@media(min-width:720px) {
   .nav-bar{
     display: none;
   }
@@ -116,11 +139,20 @@ header{
     height: 57px;
     padding-left: 30px;
   }
+
+  .menu__buttom{
+    position: absolute;
+    left: 90%;
+    padding-top: 0;
+  }
+
 }
 
   .menu li{
     font-size: 15.5px;
   }
+
+  
 
 /*/header*/
 
@@ -207,14 +239,6 @@ header{
   95%{ margin-top: -35px;}
 
   100%{ margin-top: 0px;}
-}
-
-@keyframes lit { 
-  0%{ opacity: 100%;}
-  55%{ opacity: 100%;}
-
-  60%{ opacity: 0%;}
-  100%{ opacity: 0%;}
 }
 
 @media screen and (max-width: 640px)  {
@@ -874,10 +898,10 @@ header{
 /*foot*/
 
 .foot{
-  width: 100%;
   background: rgb(17, 17, 17);
   color: white;
-  text-align: center;
+  display: block;
+  width: 100%;
 }
 
 .foot .foot-limit{
@@ -890,28 +914,27 @@ header{
   
 .foot .foot-content{
   padding: 10px;
-  display: grid;
-  grid-template-columns: 20% 80%; 
+  display: inline-flex;
+
 }
 
 .foot .foot-social{
   text-align: left;
-  display: block;
-  margin: auto;
+  display: inline-flex;
 }
 
 .foot .social_a{
   text-decoration: none;
 }
 
-.foot #social-link_1, #social-link_2, #social-link_3, #social-link_4{
+.foot #social-link_1, #social-link_2, #social-link_3, #social-link_4, #social-link_5{
   color: rgba(50, 50, 50, 0.9) ;
   font-size: 40px;
   margin: 0px;
-  margin-left: 15px;
+  letter-spacing: 20px;
 }
 
-.foot #social-link_1 i, #social-link_2 i, #social-link_3 i, #social-link_4 i{
+.foot #social-link_1 i, #social-link_2 i, #social-link_3 i, #social-link_4 i, #social-link_5 i{
   transition: all 0.4s;
 }
 
@@ -935,6 +958,11 @@ header{
   transform:scale(1.25, 1.25);
 }
 
+.foot #social-link_5 i:hover{
+  color: #3b5998;
+  transform:scale(1.25, 1.25);
+}
+
 .foot .copy{
   font-family: Helvetica, sans-serif;
   font-size: 15px;
@@ -942,7 +970,10 @@ header{
   text-align: right;
   align-self: center;
   color: rgb(170, 170, 170);
-  display: block;
+  display: inline-flex;
+  position: absolute;
+  left: 72%;
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -953,6 +984,10 @@ header{
     gap: 20px;
   }
   
+.foot .foot-social{
+  margin: auto;
+}
+
 .foot #social-link_1, #social-link_2, #social-link_3, #social-link_4{
   margin-left: 0;
   letter-spacing: 10px;
@@ -960,6 +995,9 @@ header{
 
 .foot .copy {
       text-align: center;
+      position: relative;
+      left: 0%;
+      margin: auto;
     }
   }
 
