@@ -58,6 +58,20 @@ btnMenu.addEventListener("click", function(){
 
 /* /Menu */
 
+/* Skills */
+
+let SkillsMove_1 = document.querySelector("#buttom_skills");
+function MoveSkills_00() {
+  let Move = document.querySelector("#skill");
+  Move.style.marginTop = "-31.25px"
+}
+
+SkillsMove_1.addEventListener('click', function(){
+  MoveSkills_00(); 
+});
+
+/* /Skills*/
+
 /* slider */
 
 const slider = document.querySelector("#slider_contact");

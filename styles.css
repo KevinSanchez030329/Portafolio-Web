@@ -349,24 +349,29 @@ header{
 
 /* habilidades*/
  
+.habilid_info{
+  width: 90%;
+  margin-left: 0;
+}
+
 .habilid_info .habilid_static{
   width: 100%;
   position: relative;
-  border: 3px solid #03318C;
+  background: #2e66ff28;
   border-radius: 20px;
-  padding: 0 auto;
+  padding: 0;
   margin-top: 10px;
   display: flex;
-  box-sizing: border-box;
 }
 
 .biog .habilid_info .habilid_static p{
   padding: 0;
   text-align: right;
+  color: #ffff;
+  font-weight: 900;
   display: flex;
-  color: #ffffff;
   font-family: 'Inter', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .biog .habilid_info .habilid_static .habilid_posent{
@@ -374,40 +379,134 @@ header{
   left: 90%;
 }
 
+.biog .info_biog .habilid_info .buttom-skills{
+  display: inline-block;
+  position: absolute;
+  left: 105%;
+  align-self: center;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.biog .info_biog .habilid_info .buttom-skills i{
+  color: #84b6f4;
+  font-size: 40px;
+}
+
+.biog .info_biog .habilid_info .buttom-skills:hover{
+  transform: rotate(360deg);
+}
+
+.biog .info_biog .habilid_static .skills_postA{
+  display: flex;
+  height: 31.25px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.biog .info_biog .habilid_static .skills_postA ul{
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s;
+  margin-top: 0px;
+  /*margin-top: -31.25px;*/
+}
+
+.biog .info_biog .habilid_static .skills_postA li{
+  padding-right:14px ;
+}
+
 .biog .info_biog .habilid_info .habilid_01{
-  background: #2e66ff77;
-  text-align: left;
+  background: #5086c1;
   border-radius: 14px;
+  text-align: left;
   width: 90%;
   display: flex;
-  padding: 9px;
+  padding: 7px;
+  position: relative;
+}
+
+.biog .info_biog .habilid_info .habilid_01_1{
+  border-radius: 14px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.biog .info_biog .habilid_info .habilid_01_1 .skill_01{
+  width: 33%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius:14px ;
+  background: #B22222;
+  position: relative;
+  padding: 7px;
+}
+.biog .info_biog .habilid_info .habilid_01_1 .skill_02{
+  width: 33%;
+  background: #3F448C;
+  position: relative;
+  padding: 7px;
+}
+.biog .info_biog .habilid_info .habilid_01_1 .skill_03{
+  width: 34%;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius:14px ;
+  background: #dad014;
+  position: relative;
+  padding: 7px;
+}
+
+.biog .info_biog .habilid_static .skills_postB{
+  display: flex;
+  height: 31.25px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.biog .info_biog .habilid_static .skills_postB ul{
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  /*margin-top: -31.25px;*/
+}
+
+.biog .info_biog .habilid_static .skills_postB li{
+  padding-right:14px ;
 }
 
 .biog .info_biog .habilid_info .habilid_02{
-  background: #2e66ff77;
+  background: #5086c1;
   border-radius: 14px;
   text-align: left;
   width: 70%;
   display: flex;
-  padding: 9px;
+  padding: 7px;
+  position: relative;
 }
 
 .biog .info_biog .habilid_info .habilid_03{
-  background: #2e66ff77;
+  background: #5086c1;
   border-radius: 14px;
   text-align: left;
   width: 50%;
   display: flex;
-  padding: 9px;
+  padding: 7px;
+  position: relative;
 }
 
 .biog .info_biog .habilid_info .habilid_04{
-  background: #2e66ff77;
+  background:	#5086c1;
   border-radius: 14px;
   text-align: left;
   width: 40%;
   display: flex;
-  padding: 9px;
+  padding: 7px;
+  position: relative;
 }
 
 @media screen and (max-width: 440px) {
@@ -944,24 +1043,28 @@ header{
 }
 
 .foot #social-link_2 i:hover{
-  color: #4dc247;
+  color: #00acee;
   transform:scale(1.25, 1.25);
 }
 
 .foot #social-link_3 i:hover{
-  color: #FF4301;
+  color: #C13584;
   transform:scale(1.25, 1.25);
 }
 
 .foot #social-link_4 i:hover{
-  color: rgb(0, 0, 0);
+  color: #4dc247;
   transform:scale(1.25, 1.25);
 }
 
 .foot #social-link_5 i:hover{
-  color: #3b5998;
+  color: #FF4301;
   transform:scale(1.25, 1.25);
 }
+
+
+
+
 
 .foot .copy{
   font-family: Helvetica, sans-serif;
@@ -972,7 +1075,7 @@ header{
   color: rgb(170, 170, 170);
   display: inline-flex;
   position: absolute;
-  left: 72%;
+  left: 78%;
   
 }
 
