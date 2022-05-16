@@ -376,7 +376,7 @@ header{
 
 .biog .habilid_info .habilid_static .habilid_posent{
   position: absolute;
-  left: 90%;
+  left: 90% ;
 }
 
 .biog .info_biog .habilid_info .buttom-skills{
@@ -384,17 +384,18 @@ header{
   position: absolute;
   left: 105%;
   align-self: center;
-  transition: all 0.8s;
+
   cursor: pointer;
+}
+
+.biog .info_biog .habilid_info .buttom-skills .rotate{
+  transform: rotatex(180deg);
+  transition: all 0.5s;
 }
 
 .biog .info_biog .habilid_info .buttom-skills i{
   color: #84b6f4;
   font-size: 40px;
-}
-
-.biog .info_biog .habilid_info .buttom-skills:hover{
-  transform: rotate(360deg);
 }
 
 .biog .info_biog .habilid_static .skills_postA{
@@ -411,11 +412,8 @@ header{
   margin: 0;
   transition: all 0.5s;
   margin-top: 0px;
+  z-index: 200;
   /*margin-top: -31.25px;*/
-}
-
-.biog .info_biog .habilid_static .skills_postA li{
-  padding-right:14px ;
 }
 
 .biog .info_biog .habilid_info .habilid_01{
@@ -432,21 +430,26 @@ header{
   border-radius: 14px;
   text-align: left;
   width: 100%;
+  margin-right: 14px;
   display: flex;
   position: relative;
+}
+
+.biog .info_biog .habilid_info .habilid_01_1 p{
+  color: rgb(32, 32, 32);
 }
 
 .biog .info_biog .habilid_info .habilid_01_1 .skill_01{
   width: 33%;
   border-top-left-radius: 14px;
   border-bottom-left-radius:14px ;
-  background: #B22222;
+  background: #e44d26;
   position: relative;
   padding: 7px;
 }
 .biog .info_biog .habilid_info .habilid_01_1 .skill_02{
   width: 33%;
-  background: #3F448C;
+  background: #026ec7;
   position: relative;
   padding: 7px;
 }
@@ -454,7 +457,7 @@ header{
   width: 34%;
   border-top-right-radius: 14px;
   border-bottom-right-radius:14px ;
-  background: #dad014;
+  background: #f7df1e;
   position: relative;
   padding: 7px;
 }
@@ -471,13 +474,12 @@ header{
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-top: 0px;
+  margin-top: -31.25px;
+  transition: all 0.5s;
   /*margin-top: -31.25px;*/
 }
 
-.biog .info_biog .habilid_static .skills_postB li{
-  padding-right:14px ;
-}
+
 
 .biog .info_biog .habilid_info .habilid_02{
   background: #5086c1;
@@ -489,6 +491,43 @@ header{
   position: relative;
 }
 
+.biog .info_biog .habilid_info .habilid_02_1{
+  border-radius: 14px;
+  text-align: left;
+  width: 100%;
+  margin-right: 14px;
+  display: flex;
+  position: relative;
+}
+
+.biog .info_biog .habilid_info .habilid_02_1 p{
+  color: rgb(32, 32, 32);
+}
+
+.biog .info_biog .habilid_info .habilid_02_1 .skill_04{
+  width: 33%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius:14px ;
+  background: #787cb4;
+  position: relative;
+  padding: 7px;
+}
+.biog .info_biog .habilid_info .habilid_02_1 .skill_05{
+  width: 33%;
+  background: #ffa518;
+  position: relative;
+  padding: 7px;
+}
+
+.biog .info_biog .habilid_info .habilid_02_1 .skill_06{
+  width: 34%;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius:14px ;
+  background: #5382a1;
+  position: relative;
+  padding: 7px;
+}
+
 .biog .info_biog .habilid_info .habilid_03{
   background: #5086c1;
   border-radius: 14px;
@@ -496,7 +535,6 @@ header{
   width: 50%;
   display: flex;
   padding: 7px;
-  position: relative;
 }
 
 .biog .info_biog .habilid_info .habilid_04{
@@ -506,7 +544,6 @@ header{
   width: 40%;
   display: flex;
   padding: 7px;
-  position: relative;
 }
 
 @media screen and (max-width: 440px) {
@@ -1043,22 +1080,12 @@ header{
 }
 
 .foot #social-link_2 i:hover{
-  color: #00acee;
-  transform:scale(1.25, 1.25);
-}
-
-.foot #social-link_3 i:hover{
-  color: #C13584;
-  transform:scale(1.25, 1.25);
-}
-
-.foot #social-link_4 i:hover{
   color: #4dc247;
   transform:scale(1.25, 1.25);
 }
 
-.foot #social-link_5 i:hover{
-  color: #FF4301;
+.foot #social-link_3 i:hover{
+  color: #ef3a25;
   transform:scale(1.25, 1.25);
 }
 

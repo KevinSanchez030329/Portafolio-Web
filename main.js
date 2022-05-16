@@ -60,15 +60,47 @@ btnMenu.addEventListener("click", function(){
 
 /* Skills */
 
-let SkillsMove_1 = document.querySelector("#buttom_skills");
-function MoveSkills_00() {
-  let Move = document.querySelector("#skill");
-  Move.style.marginTop = "-31.25px"
+let SkillsMove = document.querySelector("#buttom_skills");
+let Move = document.querySelector("#skill");
+let Cont = 0;
+
+function MoveSkills() {
+  
+  if(Cont == 0){
+    Move.style.marginTop = "-31.25px";
+    SkillsMove.classList.add('rotate');
+    Cont = 1;
+  }else{
+    Move.style.marginTop = "0px";
+    SkillsMove.classList.remove('rotate');
+    SkillsMove.style.transition = "all 0.5s";
+    Cont = 0;
+  }
+
 }
 
-SkillsMove_1.addEventListener('click', function(){
-  MoveSkills_00(); 
-});
+SkillsMove.addEventListener('click', MoveSkills, true);
+
+let SkillsMoveA = document.querySelector("#buttom_skillsA");
+let MoveA = document.querySelector("#skillA");
+let ContA = 0;
+
+function MoveSkillsA() {
+  
+  if(Cont == 0){
+    MoveA.style.marginTop = "0px";
+    SkillsMoveA.classList.add('rotate');
+    Cont = 1;
+  }else{
+    MoveA.style.marginTop = "-31.25px";
+    SkillsMoveA.classList.remove('rotate');
+    SkillsMoveA.style.transition = "all 0.5s";
+    Cont = 0;
+  }
+
+}
+
+SkillsMoveA.addEventListener('click', MoveSkillsA, true);
 
 /* /Skills*/
 
