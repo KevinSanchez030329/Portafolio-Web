@@ -151,3 +151,19 @@ setInterval(function(){
 }, 10000);
 
 /* slider */
+
+/* Alert */
+
+let BntAlert = document.getElementById('social_link_3');
+
+function Alert(){
+  alert("Correo: kevinsanchez030329@gmail.com");
+}
+
+BntAlert.addEventListener('click', function(){
+
+  Alert();
+
+});
+
+/* /Alert */
