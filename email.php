@@ -6,5 +6,6 @@
     $mensaje = $_POST["mensaje"];
     $content = "Nombre: " . $name . "\nProyecto: " . $proyect . "\nCorreo/Numero:" . $email . "\nMensaje: " . $mensaje;
     mail($email, $proyect, $content);
-    header ("Location:form.html");
+    echo "<script>alert('el mensaje se envio exitosamente')</script>";
+    echo "<script> setTimeout(\"location.href='index.html'\",500)</script>";
 ?>
