@@ -104,6 +104,61 @@ SkillsMoveA.addEventListener('click', MoveSkillsA, true);
 
 /* /Skills*/
 
+/* Portafolio*/
+
+  let link_demo = document.querySelector("#demo_link");
+  let link_proyect = document.querySelector("#proyect_link");
+  let cont_demo = 1;
+  let cont_proyect = 0;
+
+  function displaydemo(){
+    let content_demo = document.querySelector("#port_demo");
+    let content_proyect = document.querySelector("#port_proyect");
+    
+    if(cont_demo > cont_proyect){
+      content_demo.style.display = "block";
+      content_proyect.style.display = "none";
+      cont_demo = 1;
+      cont_proyect = 0;
+    }else if(cont_demo < cont_proyect){
+      content_demo.style.display = "block";
+      content_proyect.style.display = "none";
+      cont_demo = 1;
+      cont_proyect = 0;
+    }
+  }
+  link_demo.addEventListener('click', displaydemo, true);
+  
+
+  function displayproyect(){
+    let content_demo = document.querySelector("#port_demo");
+    let content_proyect = document.querySelector("#port_proyect");
+    
+    if(cont_proyect > cont_demo){
+
+      content_demo.style.display = "none";
+      content_proyect.style.display = "block";
+
+      cont_demo = 0;
+      cont_proyect = 1;
+
+    }else if(cont_proyect < cont_demo){
+
+      content_demo.style.display = "none";
+      content_proyect.style.display = "block";
+
+      cont_demo = 1;
+      cont_proyect = 0;
+
+    }
+  }
+  
+  link_proyect.addEventListener('click', displayproyect, true);
+
+
+
+/* /Portafolio*/
+
 /* slider */
 
 const slider = document.querySelector("#slider_contact");
