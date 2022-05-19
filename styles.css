@@ -609,6 +609,7 @@ header{
   padding-bottom: 30px;
   border-radius: 10px;
   border-top-left-radius: 0;
+  box-shadow: -7px 7px 15px #000;
 }
 
 .port .link_port{
@@ -618,7 +619,7 @@ header{
   cursor: pointer;
   font-size: 18px;
   transition: all 0.5s;
-  background: #141414;
+  background: #010314;
   margin-top: 5px;
 
   border-top-left-radius: 10px;
@@ -656,19 +657,18 @@ header{
 }
 
 .content_proyect .proyect_prox{
-  background: #04032b;
+  background: #0e0e0e;
   border-radius: 15px;
   box-shadow: -5px 5px 5px #000;
-  padding: 25px;
-  margin: auto;
-  display: flex;
+  max-width: 390px;
+  max-height: 290px;
+  padding: 15px;
+  display: inline-block;
+
 }
 
 .content_proyect .proyect_prox h2{
-  font-size: 80%;
-}
-
-.content_proyect .proyect_prox h2{
+  font-size: 20px;
   margin: auto;
 }
 
@@ -816,7 +816,7 @@ header{
 }
 
 .demo_1 .back_demo_1 a:hover{
-  background: rgb(16, 4, 128);
+  background: #1f1f1f00;
 }
 
 .demo_1 .back_demo_1 a i{
@@ -914,7 +914,7 @@ header{
 }
 
 .demo_2 .back_demo_2 a:hover{
-  background: rgb(16, 4, 128);
+  background: #1f1f1f00;
 }
 
 .demo_2 .back_demo_2 a i{
@@ -1012,7 +1012,7 @@ header{
 }
 
 .demo_3 .back_demo_3 a:hover{
-  background: rgb(16, 4, 128);
+  background: #1f1f1f00;
 }
 
 .demo_3 .back_demo_3 a i{
