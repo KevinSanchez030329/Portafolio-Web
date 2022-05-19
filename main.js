@@ -58,6 +58,29 @@ btnMenu.addEventListener("click", function(){
 
 /* /Menu */
 
+/*TItle Efect typed*/
+
+  const typed = new Typed('.typed', {
+    strings: ['Kevin J. Sanchez,', 'Front-end,', 'Back-end,'],
+
+    stringsElement: null,
+    typeSpeed: 45,
+    startDelay: 500,
+    backSpeed: 45,
+    smartBackspace: true,
+    shuffle: false,
+    backDelay: 3000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '|',
+    contentType: 'html',
+
+  });
+
+
+/* /TItle Efect typed*/
+
 /* Skills */
 
 let SkillsMove = document.querySelector("#buttom_skills");
@@ -116,15 +139,21 @@ SkillsMoveA.addEventListener('click', MoveSkillsA, true);
     let content_proyect = document.querySelector("#port_proyect");
     
     if(cont_demo > cont_proyect){
+
       content_demo.style.display = "block";
       content_proyect.style.display = "none";
+      
       cont_demo = 1;
       cont_proyect = 0;
+
     }else if(cont_demo < cont_proyect){
+      
       content_demo.style.display = "block";
       content_proyect.style.display = "none";
+      
       cont_demo = 1;
       cont_proyect = 0;
+    
     }
   }
   link_demo.addEventListener('click', displaydemo, true);
@@ -212,7 +241,7 @@ setInterval(function(){
 let BntAlert = document.getElementById('social_link_3');
 
 function Alert(){
-  alert("Correo: kevinsanchez030329@gmail.com");
+  swal("Correo:", "Mi correo es kevinsanchez030329@gmail.com");
 }
 
 BntAlert.addEventListener('click', function(){

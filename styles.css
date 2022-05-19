@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   z-index: 10;
   background-color: #1d1d1d;
@@ -22,6 +19,13 @@ body hr{
   background: rgba(0, 0, 0, 0.35);
 }
 
+body p{
+    font-weight: 350;
+    color: #f3f3f3;
+    font-size: 17.5px;
+    letter-spacing: 0.5px;
+  }
+
 /*header*/
 
 header{
@@ -36,7 +40,6 @@ header{
   background: #161616;
   padding: 20px;
   display: block;
-  color: white;
   cursor: pointer;
   width: 100%;
   position:fixed;
@@ -78,7 +81,7 @@ header{
   padding: 18px;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   transition: all 0.45s;
 }
 
@@ -90,7 +93,7 @@ header{
 }
 
 .menu__buttom i{
-  color: #ffffff;
+  color: #fff;
   font-size: 32px;
   transition: all 0.2s;
 }
@@ -105,7 +108,7 @@ header{
 }
 
 .menu__link:hover{
-  color: #418ACA;
+  color: #4885ff;
 }
 
 @media(min-width:530px){
@@ -128,7 +131,7 @@ header{
   }
   
   .menu {
-    background: rgb(12, 12, 12);
+    background: #161616;
  
     margin-left: 0 ;
     display: flex;
@@ -152,8 +155,6 @@ header{
     font-size: 15.5px;
   }
 
-  
-
 /*/header*/
 
 /*banner*/
@@ -161,62 +162,81 @@ header{
 #banner {
   position: relative;
   width: 100%;
-  box-sizing:content-box;
-  padding-top: 57px;
-  height: 540px;
+  height: 98vh;
+  box-sizing: border-box;
+
   background: url(assets/img1.jpg);
   background-attachment: fixed;
   background-position: 0px 0px;
   background-size: cover;
-  box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
-}
-
-#banner .grid-banner{
-  display: block;
-  height: 100%;
+  box-shadow: 0 2px 12px rgb(0, 0, 0, 0.7);
 }
 
 #banner .content-bant{
-  padding: 60px;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
+#banner .info{
+  width: 100%;
+  align-self: center;
+  margin: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.info .logo_banner{
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+
+  border-radius: 10px;
+  padding: 25px;
+
+  max-width: 400px;
+  margin: auto;
 }
 
 #banner .info h1 {
-  font-size: 2.9em;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6em;
 }
 
-#banner .content-bant .info-text p, li{
-  font-size: 25px;
+#banner .info h2{
+  font-size: 24px;
+  color: #4885ff;
+  font-weight: 700;
+  
 }
 
-#banner .content-bant .info-text{
-  width: 100%;
-}
-
-#banner .info-text{
+#banner .info_text{
   display: flex;
-  width: 360px;
+  width: 100%;
   height: 35px;
-  font-size: 1.5em;
   line-height: 35px;
   color: white;
   overflow: hidden;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
-#banner .info-text ul{
+#banner .info_text p{
+  font-size: 25px;
+}
+
+#banner .info_text ul{
   list-style: none;
   padding-left: 10px ;
   animation: cambiar 5s infinite;
 }
 
-#banner .info-text ul, p{
+#banner .info_text ul, p{
   margin: 0;
+  font-weight: 500;
 }
 
-#banner .info-text li{
+#banner .info_text li{
   color: #4885ff;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 @keyframes cambiar {
@@ -238,12 +258,6 @@ header{
 
 @media screen and (max-width: 640px)  {
 
- 
-
-  #banner .content-bant{
-    padding: 25px;
-  }
-
   #banner .info h1{
     display: block;
     font-size: 2.5em;
@@ -252,21 +266,9 @@ header{
   #banner .content-bant .info-text p, li{
     font-size: 20px;
   }
-  
-  .contac{
-    left: 45%;
-  }
-
-  .contac i{
-    font-size: 17px;
-  }
 }
 
 @media screen and (max-width: 750px)  {
-  
-  #banner .grid-banner{
-    display: block;
-  }
 
 }
 
@@ -287,45 +289,56 @@ header{
 
 .biog h1{
   text-align: center;
-  font-size: 23.5px;
-  
+
   display: inline-flex;
-  border-left: 2px solid #03318C; 
-  padding-left: 25px;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  border-left: 2.5px solid #03318C; 
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  font-size: 27px;
 }
 
 .biog h3{
   text-align: left;
-  font-weight: 300;
+  font-weight: 500;
   color: #418ACA;
+  font-size: 21px;
+  letter-spacing:0.9px;
 }
 
 .biog p{
-  margin-top: 15px;
+  margin-top: 10px;
   text-align: left;
   display: flex;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
 }
 
 .biog .info_biog{
   display: grid;
-  grid-template-columns: 40% 60%;
-  margin-top: 15px;
-  padding: 30px;
-  border-right: 2px solid #03318C;
+  grid-template-columns: 43% 57% ;
+  margin-top: 25px;
+
 }
 
-.biog img{  
-  width: 85%;
-  margin: auto;
-  border-radius: 5px;
+.info_biog .img_biog{
+  width: 100%;
   display: flex;
-  box-shadow: -15px 15px 15px #000;
-  
+}
+
+.img_biog .post_img_biog{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.post_img_biog img{
+  width: 70%;
+
+  box-shadow: -10px 8px 10px #000;
+  border-radius: 5px;
+  align-self: center;
+  display: block;
+  margin: auto;
 }
 
 .biog .info_biog h3{
@@ -365,7 +378,6 @@ header{
   color: #ffff;
   font-weight: 900;
   display: flex;
-  font-family: 'Inter', sans-serif;
   font-size: 15px;
 }
 
@@ -412,10 +424,10 @@ header{
 }
 
 .biog .info_biog .habilid_info .habilid_01{
-  background: #5086c1;
+  background: #4885ff;
   border-radius: 14px;
   text-align: left;
-  width: 90%;
+  width: 85%;
   display: flex;
   padding: 7px;
   position: relative;
@@ -438,18 +450,26 @@ header{
   width: 33%;
   border-top-left-radius: 14px;
   border-bottom-left-radius:14px ;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius:14px ;
   background: #e44d26;
   position: relative;
   padding: 7px;
 }
 .biog .info_biog .habilid_info .habilid_01_1 .skill_02{
   width: 33%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius:14px ;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius:14px ;
   background: #026ec7;
   position: relative;
   padding: 7px;
 }
 .biog .info_biog .habilid_info .habilid_01_1 .skill_03{
   width: 34%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius:14px ;
   border-top-right-radius: 14px;
   border-bottom-right-radius:14px ;
   background: #f7df1e;
@@ -474,13 +494,11 @@ header{
   /*margin-top: -31.25px;*/
 }
 
-
-
 .biog .info_biog .habilid_info .habilid_02{
-  background: #5086c1;
+  background: #4885ff;
   border-radius: 14px;
   text-align: left;
-  width: 70%;
+  width: 60%;
   display: flex;
   padding: 7px;
   position: relative;
@@ -503,31 +521,38 @@ header{
   width: 50%;
   border-top-left-radius: 14px;
   border-bottom-left-radius:14px ;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius:14px ;
   background: #787cb4;
   position: relative;
   padding: 7px;
 }
 .biog .info_biog .habilid_info .habilid_02_1 .skill_05{
   width: 50%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius:14px ;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius:14px ;
   background: #ffa518;
   position: relative;
   padding: 7px;
 }
 
-.biog .info_biog .habilid_info .habilid_02_1 .skill_06{
-  width: 34%;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius:14px ;
-  background: #5382a1;
+.biog .info_biog .habilid_info .habilid_03{
+  background: #4885ff;
+  border-radius: 14px;
+  text-align: left;
+  width: 55%;
+  display: flex;
   position: relative;
   padding: 7px;
 }
 
-.biog .info_biog .habilid_info .habilid_03{
-  background: #5086c1;
+.biog .info_biog .habilid_info .habilid_04{
+  background: #4885ff;
   border-radius: 14px;
   text-align: left;
-  width: 50%;
+  width: 40%;
   display: flex;
   position: relative;
   padding: 7px;
@@ -568,7 +593,21 @@ header{
     padding: 0px;
     border-right: none;
   }
+
 }
+
+  @media screen and (max-width: 370px){
+    .biog .info_biog .habilid_info .habilid_04{
+      position: static;
+    }
+  }
+
+  @media screen and (max-width: 300px){
+    .biog .info_biog .habilid_info .habilid_03{
+      position: static;
+    }
+  }
+
 
 /*/Sobre mi*/
 
@@ -586,23 +625,25 @@ header{
 
 .port h1{
   text-align: center;
-  font-size: 23.5px;
-  
+  font-size: 27px;
+  letter-spacing: 1px;
+
   display: inline-flex;
   border-left: 2px solid #03318C; 
   padding-left: 25px;
   padding: 10px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .port h3{
   text-align: left;
-  font-weight: 300;
+  font-weight: 500;
   color: #418ACA;
+  font-size: 21px;
+  letter-spacing:0.9px;
 }
 
 .port .port_menu{
-  background: #141414;
+  background: #222121;
   margin: auto;
   box-sizing: border-box;
   padding: 20px;
@@ -618,8 +659,8 @@ header{
   color: #ffffff;
   cursor: pointer;
   font-size: 18px;
-  transition: all 0.5s;
-  background: #010314;
+  transition: all 0.3s;
+  background: #121c77;
   margin-top: 5px;
 
   border-top-left-radius: 10px;
@@ -629,13 +670,18 @@ header{
 }
 
 .port .link_port:hover{
-  color: #418ACA;
+  background: #0955ec;
+}
+
+.port .link_port:active{
+  background: #222121;
 }
 
 /* Proyectos*/
 
 .port .port_proyect{
   display: none;
+  width: auto;
 }
 
 .port_proyect h2{
@@ -670,6 +716,10 @@ header{
 .content_proyect .proyect_prox h2{
   font-size: 20px;
   margin: auto;
+}
+
+.content_proyect .proyect_prox p{
+  margin-top: 10px;
 }
 
 /* Proyectos*/
@@ -756,7 +806,7 @@ header{
 .demo_1 .info_demo_1 h3{
   margin: auto;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .demo_1 .info_demo_1 img{
@@ -854,7 +904,7 @@ header{
 .demo_2 .info_demo_2 h3{
   margin: auto;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .demo_2 .info_demo_2 img{
@@ -952,7 +1002,7 @@ header{
 .demo_3 .info_demo_3 h3{
   margin: auto;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .demo_3 .info_demo_3 img{
@@ -1032,7 +1082,7 @@ header{
 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 780px) {
   .port{
     padding: 10px;
   }
@@ -1046,31 +1096,32 @@ header{
     grid-gap: 20px;
   }
 
-  .demo_1{
-    font-size: 75%;
+  .content_demos p{
+    font-size: 17px;
     margin: 0;
   }
 
-  .demo_1 img{
+  .content_demos img{
     width: 55%;
   }
 
-  .demo_2 {
-    font-size: 75%;
-    margin: 0;
+}
+
+@media (max-width: 410px){
+  .content_demos p{
+    font-size: 14px;
+  }
+  .content_demos h3{
+    font-size: 17px;
   }
 
-  .demo_2 img{
-    width: 55%;
-  }
-
-  .demo_3 {
-    font-size: 75%;
-    margin: 0;
-  }
-
-  .demo_3 img{
-    width: 55%;
+  @media (max-width: 280px){
+    .content_demos p{
+      font-size: 12px;
+    }
+    .content_demos h3{
+      font-size: 15px;
+    }
   }
 
 }
@@ -1090,11 +1141,11 @@ header{
 
 .ofert h1{
   text-align: center;
-  font-size: 31x;
-  font-family: 'Pacifico', 'Montserrat', cursive;
+  font-size: 31px;
   font-weight: 100;
   padding: 10px;
   align-self: center;
+  font-family: 'Pacifico', cursive;
   text-shadow: 0 0 5px #03318C, 0 0 10px #03318C, 0 0 15px #03318C;
 }
 
@@ -1116,7 +1167,7 @@ header{
   font-weight: 300;
 }
 
-.ofert .ofert_content{
+.ofert .ofert_info{
   position: relative;
   width: 75%;
   margin: auto;
@@ -1222,7 +1273,6 @@ header{
 
   @media screen and (max-width: 430px){
 
-    
     .ofert .item-ofert{
       padding: 5px;
     }
@@ -1241,7 +1291,6 @@ header{
 
   }
 
-
 /*/Servicios*/
 
 /*Contacto*/
@@ -1259,18 +1308,20 @@ header{
 }
 
 .contact .contact_content h1 {
-  font-size: 23.5px;
+  letter-spacing: 1px;
+  font-size: 27px;
   color: #ffffff;
   border-left: 2px solid #03318C;
   display: flex;
   padding: 10px ;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .contact .contact_content h3{
   text-align: left;
-  font-weight: 300;
+  font-weight: 500;
   color: #418ACA;
+  font-size: 21px;
+  letter-spacing:0.9px;
 }
 
 .contact .post_contact{
@@ -1284,10 +1335,10 @@ header{
   max-height: 457px;
   margin: 35px auto;
   margin-top: 0;
+  font-size: 17px;
   box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.7);
   border-radius: 10px;
   background: #ececec; 
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact .email_form h4{
@@ -1297,7 +1348,7 @@ header{
   border-top-right-radius: 10px;
   box-sizing: border-box;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -1307,7 +1358,7 @@ header{
   border: none;
   padding: 10px;
   transition: 0.5s;
-  font-size: 14px;
+  font-size: 17px;
   background: #ececec; 
 }
 
@@ -1344,10 +1395,11 @@ header{
   color: rgb(221, 221, 221);
   cursor: pointer;
   border: none;
+  width: 65px;
+  align-self: center;
   border-radius: 5px;
-  width: 70px;
-  height: 34px;
-  font-size: 14px;
+  display: inline-flex;
+  font-size: 17px;
   margin: 10px;
   transition: 0.5s;
 }
@@ -1361,20 +1413,18 @@ header{
   background: #0000002d;
   margin-bottom: 20px;
   box-shadow: 8px 8px 12px rgb(0, 0, 0, 0.7);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .contact .post_inicial h2{
   font-size: 19px;
   color: #ffffff;
   padding: 10px;
-  background: #418ACA;
+  background: #214894;
 }
 
 .contact .post_inicial p{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17.5px;
-  color: #ffffff;
+  font-weight: 100;
   padding: 12px;
 }
 
@@ -1384,7 +1434,6 @@ header{
   margin: auto;
   overflow: hidden;
   position: relative;
-
 }
 
 .contact .slider_contact{
@@ -1427,7 +1476,6 @@ header{
   padding: 1px;
   padding-left: 9px;
   padding-right: 6px;
-
 }
 
 .contact .back_slider:hover{
@@ -1441,7 +1489,6 @@ header{
 }
 
 .contact .post_slider{
-
   margin: 5px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.315);
@@ -1463,14 +1510,12 @@ header{
 }
 
 .contact .post_slider p{
-  font-family: Arial, Helvetica, sans-serif;
   color: #cfcfcf;
   padding: 15px;
   padding-top: 0;
   font-size: 18px;
   margin-left: 45px;
   margin-right: 45px;
-
 }
 
 .contact .post_slider a i{
@@ -1545,7 +1590,6 @@ header{
 .foot .foot-content{
   padding: 10px;
   display: inline-flex;
-
 }
 
 .foot .foot-social{
@@ -1559,7 +1603,7 @@ header{
 
 .foot #social_link_1, #social_link_2, #social_link_3{
   color: rgba(50, 50, 50, 0.9) ;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0px;
   letter-spacing: 20px;
 }
@@ -1570,18 +1614,18 @@ header{
 
 .foot #social_link_1 i:hover{
   color: #3b5998;
-  transform:scale(1.25, 1.25);
+  transform:scale(1.15, 1.15);
 }
 
 .foot #social_link_2 i:hover{
   color: #4dc247;
-  transform:scale(1.25, 1.25);
+  transform:scale(1.15, 1.15);
 }
 
 .foot #social_link_3 i:hover{
   color: #ef3a25;
   cursor: pointer;
-  transform:scale(1.25, 1.25);
+  transform:scale(1.15, 1.15);
 }
 
 .foot .copy{
@@ -1594,7 +1638,6 @@ header{
   display: inline-flex;
   position: absolute;
   left: 78%;
-  
 }
 
 @media screen and (max-width: 1024px) {
