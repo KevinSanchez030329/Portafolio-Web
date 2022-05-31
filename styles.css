@@ -349,7 +349,7 @@ header{
 }
 
 .biog .info_biog p{
-  text-align: justify;
+  text-align: left;
   padding: 0px ;
   margin: 0;
   padding: 10px;
@@ -581,7 +581,7 @@ header{
   }
 
   .biog p{
-    text-align: justify;
+    text-align: left;
   }
 
   .biog img {
