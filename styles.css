@@ -308,7 +308,7 @@ header{
 }
 
 .biog p{
-  margin-top: 10px;
+  margin-top: 0px;
   display: flex;
   text-align: left;
 }
@@ -339,6 +339,10 @@ header{
   align-self: center;
   display: block;
   margin: auto;
+}
+
+.info_biog .info_soul h3{
+  transform: translateY(-10px);
 }
 
 .biog .info_biog h3{
