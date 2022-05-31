@@ -61,7 +61,7 @@ btnMenu.addEventListener("click", function(){
 /*TItle Efect typed*/
 
   const typed = new Typed('.typed', {
-    strings: ['Kevin J. Sanchez,', 'Front-end,', 'Back-end,'],
+    strings: ['Kevin J. Sánchez', 'Front-end', 'Back-end'],
 
     stringsElement: null,
     typeSpeed: 45,

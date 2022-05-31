@@ -309,8 +309,8 @@ header{
 
 .biog p{
   margin-top: 10px;
-  text-align: left;
   display: flex;
+  text-align: left;
 }
 
 .biog .info_biog{
@@ -349,7 +349,7 @@ header{
 }
 
 .biog .info_biog p{
-  text-align: left;
+  text-align: justify;
   padding: 0px ;
   margin: 0;
   padding: 10px;
@@ -578,6 +578,10 @@ header{
   .biog h1{
     font-size: 25px;
     padding-left: 15px;
+  }
+
+  .biog p{
+    text-align: justify;
   }
 
   .biog img {
