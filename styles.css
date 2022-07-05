@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
 
+html{
+  box-sizing: border-box;
+}
+
+*,*::after, *::before{
+  box-sizing: inherit;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   position: relative;
